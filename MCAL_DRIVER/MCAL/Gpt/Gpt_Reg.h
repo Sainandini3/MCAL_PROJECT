@@ -1,0 +1,18 @@
+
+#ifndef GPT_REG_H
+#define GPT_REG_H
+
+#include <IfxGpt12_reg.h>
+
+#define GPT_REG_T2CON GPT120_T2CON
+#define GPT_REG_T2 GPT120_T2
+
+#define GPT_REG_T3CON GPT120_T3CON
+#define GPT_REG_T3 GPT120_T3
+
+#define GPT_REG_TC4ON GPT120_T4CON
+#define GPT_REG_T4 GPT120_T4
+
+#define GPT_REG_CLC GPT120_CLC
+
+#endif
