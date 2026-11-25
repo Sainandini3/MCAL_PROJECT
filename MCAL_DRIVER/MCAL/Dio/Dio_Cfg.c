@@ -12,4 +12,5 @@ Dio_ChannelConfig[DIO_MAX_CHANNELS] =
         .ChannelId  = (uint16)1U,
         .PortNumber = (uint8)2U,
         .PinNumber  = (uint8)0U
-    }};
+    }
+};

@@ -13,9 +13,7 @@ typedef struct
 
 } Gpt_HwRegisterType;
 
-Std_ReturnType Gpt_Hw_InitChannel(
-    const Gpt_ChannelConfigType *ChannelPtr
-);
+Std_ReturnType Gpt_Hw_InitChannel(const Gpt_ChannelConfigType *ChannelPtr);
 
 void Gpt_Hw_StartT3(Gpt_ValueType Value);
 void Gpt_Hw_StopT3(void);

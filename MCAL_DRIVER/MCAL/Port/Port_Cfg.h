@@ -28,9 +28,7 @@
 #define PORT_SW_MINOR_VERSION        (0U)
 #define PORT_SW_PATCH_VERSION        (0U)
 
-#define PORT_PIN_ID_LED_PIN \
-    ((Port_PinType)0U)
-#define PORT_PIN_ID_INPUT_PIN \
-    ((Port_PinType)1U)
+#define PORT_PIN_ID_LED_PIN  ((Port_PinType)0U)
+#define PORT_PIN_ID_INPUT_PIN ((Port_PinType)1U)
 
 #endif

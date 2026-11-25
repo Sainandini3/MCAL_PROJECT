@@ -17,21 +17,10 @@
 
 volatile uint8 *Mcal_PortHw_GetBaseAddress(uint8 PortNumber);
 
-uint32 Mcal_PortHw_ReadRegister(
-    volatile uint8 *BaseAddress,
-    uint32 Offset
-);
+uint32 Mcal_PortHw_ReadRegister(volatile uint8 *BaseAddress, uint32 Offset);
 
-boolean Mcal_PortHw_WriteRegister(
-    volatile uint8 *BaseAddress,
-    uint32 Offset,
-    uint32 Value
-);
+boolean Mcal_PortHw_WriteRegister(volatile uint8 *BaseAddress,uint32 Offset, uint32 Value);
 
-boolean Mcal_PortHw_WritePinLevel(
-    uint8 PortNumber,
-    uint8 PinNumber,
-    boolean LevelHigh
-);
+boolean Mcal_PortHw_WritePinLevel(uint8 PortNumber, uint8 PinNumber,boolean LevelHigh);
 
 #endif

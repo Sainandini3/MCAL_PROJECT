@@ -45,6 +45,8 @@
 #define ENABLE_MODULE 0
 #define DISABLE_MODULE 1
 
+#define  Gpt_ChannelType unsigned int
+#define Gpt_ValueType  unsigned int
 
 
 typedef enum
@@ -117,8 +119,6 @@ typedef struct
 
 extern const Gpt_ConfigType Gpt_Config;
 
-#define  Gpt_ChannelType unsigned int
-#define Gpt_ValueType  unsigned int
 
 typedef enum{
    NORMAL_MODE,

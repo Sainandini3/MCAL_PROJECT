@@ -29,22 +29,10 @@ typedef enum
 
 #define PORT_TC397_PC_MASK                (0x1FU)
 
-boolean Port_Tc397EncodeInput(
-    Port_InputPullType InputPull,
-    uint32 *HardwareMode
-);
+boolean Port_Tc397EncodeInput( Port_InputPullType InputPull, uint32 *HardwareMode);
 
-boolean Port_Tc397EncodeOutput(
-    uint8 PortNumber,
-    uint8 PinNumber,
-    uint8 OutputSelection,
-    Port_OutputType OutputType,
-    uint32 *HardwareMode
-);
+boolean Port_Tc397EncodeOutput( uint8 PortNumber,uint8 PinNumber,uint8 OutputSelection,Port_OutputType OutputType, uint32 *HardwareMode);
 
-boolean Port_Tc397IsPinSupported(
-    uint8 PortNumber,
-    uint8 PinNumber
-);
+boolean Port_Tc397IsPinSupported( uint8 PortNumber,uint8 PinNumber);
 
 #endif

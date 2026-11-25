@@ -22,17 +22,13 @@
 #define DIO_REPORT_ERROR(ApiId, ErrorId)                         \
     do                                                           \
     {                                                            \
-        (void)Det_ReportError((uint16)DIO_MODULE_ID,             \
-                              (uint8)DIO_INSTANCE_ID,            \
-                              (uint8)(ApiId),                     \
-                              (uint8)(ErrorId));                  \
+        (void)Det_ReportError((uint16)DIO_MODULE_ID, (uint8)DIO_INSTANCE_ID,(uint8)(ApiId),(uint8)(ErrorId));               \
     } while (0)
 #else
 #define DIO_REPORT_ERROR(ApiId, ErrorId) \
     do { (void)(ApiId); (void)(ErrorId); } while (0)
 #endif
-static const Dio_ChannelConfigType *Dio_lFindChannel(
-    Dio_ChannelType ChannelId)
+static const Dio_ChannelConfigType *Dio_lFindChannel(Dio_ChannelType ChannelId)
 {
     uint32 Index;
     const Dio_ChannelConfigType *ChannelConfigPtr = NULL_PTR;
@@ -46,8 +42,7 @@ static const Dio_ChannelConfigType *Dio_lFindChannel(
     }
     return ChannelConfigPtr;
 }
-static boolean Dio_lValidateChannel(
-    const Dio_ChannelConfigType *ChannelConfigPtr)
+static boolean Dio_lValidateChannel(const Dio_ChannelConfigType *ChannelConfigPtr)
 {
     if (ChannelConfigPtr == NULL_PTR)
     {
@@ -73,8 +68,7 @@ Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId)
     ChannelConfigPtr = Dio_lFindChannel(ChannelId);
     if (Dio_lValidateChannel(ChannelConfigPtr) == FALSE)
     {
-        DIO_REPORT_ERROR(DIO_READ_CHANNEL_ID,
-                        DIO_E_PARAM_INVALID_CHANNEL);
+        DIO_REPORT_ERROR(DIO_READ_CHANNEL_ID,DIO_E_PARAM_INVALID_CHANNEL);
         return STD_LOW;
     }
     BaseAddress = Mcal_PortHw_GetBaseAddress(
@@ -103,9 +97,7 @@ void Dio_WriteChannel(Dio_ChannelType ChannelId, Dio_LevelType Level)
         return;
     }
     LevelHigh = (Level == STD_HIGH) ? TRUE : FALSE;
-    (void)Mcal_PortHw_WritePinLevel(ChannelConfigPtr->PortNumber,
-                                    ChannelConfigPtr->PinNumber,
-                                    LevelHigh);
+    (void)Mcal_PortHw_WritePinLevel(ChannelConfigPtr->PortNumber, ChannelConfigPtr->PinNumber, LevelHigh);
 }
 uint32 Dio_ReadPort(Dio_PortType PortId)
 {
@@ -114,16 +106,13 @@ uint32 Dio_ReadPort(Dio_PortType PortId)
     BaseAddress = Mcal_PortHw_GetBaseAddress(PortId);
     if (BaseAddress == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_READ_PORT_ID,
-                        DIO_E_PARAM_INVALID_PORT);
+        DIO_REPORT_ERROR(DIO_READ_PORT_ID,DIO_E_PARAM_INVALID_PORT);
         return 0U;
     }
     RegisterValue = Mcal_PortHw_ReadRegister(BaseAddress, MCAL_PORTHW_IN_OFFSET);
     return (RegisterValue & DIO_PIN_MASK);
 }
-void Dio_WritePort(
-    Dio_PortType PortId,
-    uint32 Level)
+void Dio_WritePort( Dio_PortType PortId, uint32 Level)
 {
     volatile uint8 *BaseAddress;
     uint32 SetMask;
@@ -132,14 +121,12 @@ void Dio_WritePort(
     BaseAddress = Mcal_PortHw_GetBaseAddress(PortId);
     if (BaseAddress == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_WRITE_PORT_ID,
-                        DIO_E_PARAM_INVALID_PORT);
+        DIO_REPORT_ERROR(DIO_WRITE_PORT_ID,DIO_E_PARAM_INVALID_PORT);
         return;
     }
     if ((Level & ~DIO_PIN_MASK) != 0U)
     {
-        DIO_REPORT_ERROR(DIO_WRITE_PORT_ID,
-                        DIO_E_PARAM_INVALID_PORT);
+        DIO_REPORT_ERROR(DIO_WRITE_PORT_ID,DIO_E_PARAM_INVALID_PORT);
         return;
     }
     SetMask = Level & DIO_PIN_MASK;
@@ -147,38 +134,29 @@ void Dio_WritePort(
     OmrValue = SetMask | (ClearMask << 16U);
     Mcal_PortHw_WriteRegister(BaseAddress, MCAL_PORTHW_OMR_OFFSET, OmrValue);
 }
-uint32 Dio_ReadChannelGroup(
-    const Dio_ChannelGroupType *ChannelGroupIdPtr)
+uint32 Dio_ReadChannelGroup(const Dio_ChannelGroupType *ChannelGroupIdPtr)
 {
     volatile uint8 *BaseAddress;
     uint32 RegisterValue;
     uint32 Result = 0U;
     if (ChannelGroupIdPtr == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,
-                        DIO_E_PARAM_POINTER);
+        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,DIO_E_PARAM_POINTER);
         return 0U;
     }
-    if ((ChannelGroupIdPtr->offset > 15U) ||
-        (ChannelGroupIdPtr->mask == 0U) ||
-        ((ChannelGroupIdPtr->mask & ~DIO_PIN_MASK) != 0U) ||
-        ((ChannelGroupIdPtr->mask & 0xFFFFFFFFUL) == 0U))
+    if ((ChannelGroupIdPtr->offset > 15U) || (ChannelGroupIdPtr->mask == 0U) ||((ChannelGroupIdPtr->mask & ~DIO_PIN_MASK) != 0U) ||((ChannelGroupIdPtr->mask & 0xFFFFFFFFUL) == 0U))
     {
-        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,
-                        DIO_E_PARAM_INVALID_GROUP);
+        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,DIO_E_PARAM_INVALID_GROUP);
         return 0U;
     }
-    BaseAddress = Mcal_PortHw_GetBaseAddress(
-        ChannelGroupIdPtr->port);
+    BaseAddress = Mcal_PortHw_GetBaseAddress( ChannelGroupIdPtr->port);
     if (BaseAddress == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,
-                        DIO_E_PARAM_INVALID_PORT);
+        DIO_REPORT_ERROR(DIO_READ_GROUP_ID,DIO_E_PARAM_INVALID_PORT);
         return 0U;
     }
     RegisterValue = Mcal_PortHw_ReadRegister(BaseAddress, MCAL_PORTHW_IN_OFFSET);
-    Result = (RegisterValue & ChannelGroupIdPtr->mask)
-             >> ChannelGroupIdPtr->offset;
+    Result = (RegisterValue & ChannelGroupIdPtr->mask)>> ChannelGroupIdPtr->offset;
     return Result;
 }
 void Dio_WriteChannelGroup(
@@ -191,31 +169,25 @@ void Dio_WriteChannelGroup(
     uint32 OmrValue;
     if (ChannelGroupIdPtr == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,
-                        DIO_E_PARAM_POINTER);
+        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,DIO_E_PARAM_POINTER);
         return;
     }
     if ((ChannelGroupIdPtr->offset > 15U) ||
         (ChannelGroupIdPtr->mask == 0U) ||
         ((ChannelGroupIdPtr->mask & ~DIO_PIN_MASK) != 0U))
     {
-        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,
-                        DIO_E_PARAM_INVALID_GROUP);
+        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,DIO_E_PARAM_INVALID_GROUP);
         return;
     }
-    BaseAddress = Mcal_PortHw_GetBaseAddress(
-        ChannelGroupIdPtr->port);
+    BaseAddress = Mcal_PortHw_GetBaseAddress(ChannelGroupIdPtr->port);
     if (BaseAddress == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,
-                        DIO_E_PARAM_INVALID_PORT);
+        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,DIO_E_PARAM_INVALID_PORT);
         return;
     }
-    if ((Level & ~(ChannelGroupIdPtr->mask >>
-                   ChannelGroupIdPtr->offset)) != 0U)
+    if ((Level & ~(ChannelGroupIdPtr->mask >>ChannelGroupIdPtr->offset)) != 0U)
     {
-        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,
-                        DIO_E_PARAM_INVALID_GROUP);
+        DIO_REPORT_ERROR(DIO_WRITE_GROUP_ID,DIO_E_PARAM_INVALID_GROUP);
         return;
     }
     SetMask = (Level << ChannelGroupIdPtr->offset) &
@@ -244,8 +216,7 @@ Dio_LevelType Dio_FlipChannel(Dio_ChannelType ChannelId)
     OutputValue = Mcal_PortHw_ReadRegister(BaseAddress, MCAL_PORTHW_OUT_OFFSET);
     if ((OutputValue & PinMask) != 0U)
     {
-        Mcal_PortHw_WriteRegister(BaseAddress, MCAL_PORTHW_OMR_OFFSET,
-                                  (PinMask << 16U));
+        Mcal_PortHw_WriteRegister(BaseAddress, MCAL_PORTHW_OMR_OFFSET,(PinMask << 16U));
         Level = STD_LOW;
     }
     else
@@ -260,8 +231,7 @@ void Dio_GetVersionInfo(Std_VersionInfoType *versioninfo)
 {
     if (versioninfo == NULL_PTR)
     {
-        DIO_REPORT_ERROR(DIO_GET_VERSION_INFO_ID,
-                         DIO_E_PARAM_POINTER);
+        DIO_REPORT_ERROR(DIO_GET_VERSION_INFO_ID, DIO_E_PARAM_POINTER);
         return;
     }
     versioninfo->vendorID = (uint16)DIO_VENDOR_ID;

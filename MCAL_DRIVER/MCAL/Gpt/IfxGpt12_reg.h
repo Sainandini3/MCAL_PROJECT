@@ -1,5 +1,5 @@
-#ifndef IFXGPT12_REG_H
-#define IFXGPT12_REG_H
+#ifndef IFXGPT120_REG_H
+#define IFXGPT120_REG_H
 
 #define GPT120_BASE          0xF0001800U
 

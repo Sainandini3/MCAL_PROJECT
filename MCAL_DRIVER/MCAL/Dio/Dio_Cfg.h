@@ -16,7 +16,6 @@ typedef struct
 
 } Dio_ChannelConfigType;
 
-extern const Dio_ChannelConfigType
-    Dio_ChannelConfig[DIO_MAX_CHANNELS];
+extern const Dio_ChannelConfigType Dio_ChannelConfig[DIO_MAX_CHANNELS];
 
 #endif

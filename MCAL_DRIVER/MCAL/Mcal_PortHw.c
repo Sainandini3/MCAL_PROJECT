@@ -108,25 +108,19 @@ volatile uint8 *Mcal_PortHw_GetBaseAddress(uint8 PortNumber)
     return BaseAddress;
 }
 
-uint32 Mcal_PortHw_ReadRegister(
-    volatile uint8 *BaseAddress,
-    uint32 Offset)
+uint32 Mcal_PortHw_ReadRegister(volatile uint8 *BaseAddress,uint32 Offset)
 {
     uint32 RegisterValue = 0U;
 
     if (BaseAddress != NULL_PTR)
     {
-        RegisterValue =
-            (*(volatile uint32 *)(BaseAddress + Offset));
+        RegisterValue = (*(volatile uint32 *)(BaseAddress + Offset));
     }
 
     return RegisterValue;
 }
 
-boolean Mcal_PortHw_WriteRegister(
-    volatile uint8 *BaseAddress,
-    uint32 Offset,
-    uint32 Value)
+boolean Mcal_PortHw_WriteRegister(volatile uint8 *BaseAddress,uint32 Offset,uint32 Value)
 {
     if (BaseAddress == NULL_PTR)
     {
@@ -148,8 +142,7 @@ boolean Mcal_PortHw_WritePinLevel(
     uint32 PinMask;
     uint32 OmrValue;
 
-    if ((PinNumber > 15U) ||
-        ((LevelHigh != TRUE) && (LevelHigh != FALSE)))
+    if ((PinNumber > 15U) ||((LevelHigh != TRUE) && (LevelHigh != FALSE)))
     {
         return FALSE;
     }
@@ -172,10 +165,7 @@ boolean Mcal_PortHw_WritePinLevel(
         OmrValue = (PinMask << 16U);
     }
 
-    if (Mcal_PortHw_WriteRegister(
-            BaseAddress,
-            MCAL_PORTHW_OMR_OFFSET,
-            OmrValue) == FALSE)
+    if (Mcal_PortHw_WriteRegister( BaseAddress, MCAL_PORTHW_OMR_OFFSET,OmrValue) == FALSE)
     {
         return FALSE;
     }
