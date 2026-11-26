@@ -84,11 +84,8 @@
 
 
 
-
-typedef struct
-{
-
-}EcuM_ConfigType;
+//structure members
+typedef struct EcuM_ConfigType EcuM_ConfigType;
 
 typedef enum
 {

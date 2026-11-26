@@ -1,0 +1,1996 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc22284a --dep-file=MCAL/Gpt/Gpt.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc39xb -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Configurations -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Includes -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Det -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Dio -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Gpt -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Ocu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCU -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o MCAL/Gpt/Gpt.src ../MCAL/Gpt/Gpt.c"
+	.compiler_name		"ctc"
+	;source	'../MCAL/Gpt/Gpt.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Gpt.Enable_Module',code,cluster('Enable_Module')
+	.sect	'.text.Gpt.Enable_Module'
+	.align	2
+	
+; Function Enable_Module
+.L118:
+Enable_Module:	.type	func
+	ld.w	d15,0xf0001800
+.L362:
+	insert	d15,d15,#0,#0,#1
+	st.w	0xf0001800,d15
+.L363:
+	ld.w	d15,0xf0001800
+.L364:
+	jnz.t	d15:1,.L2
+.L365:
+	mov	d2,#1
+.L366:
+	j	.L3
+.L2:
+	mov	d2,#0
+.L367:
+	j	.L4
+.L4:
+.L3:
+	ret
+.L225:
+	
+__Enable_Module_function_end:
+	.size	Enable_Module,__Enable_Module_function_end-Enable_Module
+.L180:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Check_Status',code,cluster('Check_Status')
+	.sect	'.text.Gpt.Check_Status'
+	.align	2
+	
+; Function Check_Status
+.L120:
+Check_Status:	.type	func
+	ld.w	d15,[a4]
+.L372:
+	mov	d15,#0
+	jeq	d15,#0,.L5
+.L6:
+	j	.L7
+.L5:
+	ld.w	d15,[a4]
+.L373:
+	or	d15,#64
+	st.w	[a4],d15
+.L7:
+	ret
+.L226:
+	
+__Check_Status_function_end:
+	.size	Check_Status,__Check_Status_function_end-Check_Status
+.L185:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Validate_Config',code,cluster('Validate_Config')
+	.sect	'.text.Gpt.Validate_Config'
+	.align	2
+	
+; Function Validate_Config
+.L122:
+Validate_Config:	.type	func
+	jz.a	a4,.L8
+.L325:
+	ld.bu	d15,[a4]4
+.L326:
+	jlt.u	d15,#1,.L9
+.L327:
+	ld.bu	d15,[a4]4
+.L328:
+	jge.u	d15,#2,.L10
+.L329:
+	ld.w	d15,[a4]
+.L330:
+	jne	d15,#0,.L11
+.L10:
+.L9:
+.L8:
+	mov	d2,#0
+.L331:
+	j	.L12
+.L11:
+	ld.bu	d15,0x4
+.L332:
+	mov	d0,#0
+	jeq	d15,d0,.L13
+.L333:
+	mov	d0,#1
+	jeq	d15,d0,.L14
+.L334:
+	mov	d0,#2
+	jeq	d15,d0,.L15
+.L335:
+	mov	d0,#3
+	jeq	d15,d0,.L16
+.L336:
+	mov	d0,#4
+	jeq	d15,d0,.L17
+	j	.L18
+.L13:
+.L14:
+.L15:
+.L16:
+.L17:
+	j	.L19
+.L18:
+	mov	d2,#0
+.L337:
+	j	.L20
+.L19:
+	mov	d0,#0
+.L236:
+	j	.L21
+.L22:
+	ld.a	a15,[a4]
+.L338:
+	mul	d15,d0,#28
+	addsc.a	a15,a15,d15,#0
+.L237:
+	ld.w	d15,[a15]6
+.L339:
+	jlt.u	d15,#0,.L23
+.L340:
+	ld.w	d15,[a15]6
+.L341:
+	mov.u	d1,#65535
+.L342:
+	jge.u	d1,d15,.L24
+.L23:
+	mov	d2,#0
+.L343:
+	j	.L25
+.L24:
+	ld.bu	d15,[a15]5
+.L344:
+	jeq	d15,#0,.L26
+.L345:
+	ld.bu	d15,[a15]5
+.L346:
+	jeq	d15,#1,.L27
+.L347:
+	mov	d2,#0
+.L348:
+	j	.L28
+.L27:
+.L26:
+	ld.bu	d15,[a15]14
+.L349:
+	jeq	d15,#0,.L29
+.L350:
+	ld.bu	d15,[a15]14
+.L351:
+	jeq	d15,#1,.L30
+.L352:
+	ld.bu	d15,[a15]14
+.L353:
+	jeq	d15,#2,.L31
+.L354:
+	mov	d2,#0
+.L355:
+	j	.L32
+.L31:
+.L30:
+.L29:
+	add	d0,#1
+.L21:
+	mov	d15,#1
+.L356:
+	jlt.u	d0,d15,.L22
+.L223:
+	mov	d2,#1
+.L357:
+	j	.L33
+.L33:
+.L32:
+.L28:
+.L25:
+.L20:
+.L12:
+	ret
+.L220:
+	
+__Validate_Config_function_end:
+	.size	Validate_Config,__Validate_Config_function_end-Validate_Config
+.L175:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_Init',code,cluster('Gpt_Init')
+	.sect	'.text.Gpt.Gpt_Init'
+	.align	2
+	
+	.global	Gpt_Init
+; Function Gpt_Init
+.L124:
+Gpt_Init:	.type	func
+	jnz.a	a4,.L34
+.L260:
+	movh.a	a15,#@his(Gpt_Config)
+	lea	a15,[a15]@los(Gpt_Config)
+.L261:
+	j	.L35
+.L34:
+	mov.aa	a15,a4
+.L35:
+	mov.aa	a4,a15
+.L238:
+	call	Validate_Config
+.L262:
+	jne	d2,#0,.L36
+.L37:
+	j	.L38
+.L36:
+	call	Enable_Module
+.L263:
+	jne	d2,#0,.L39
+.L40:
+	j	.L41
+.L39:
+	mov	d8,#0
+.L239:
+	j	.L42
+.L43:
+	ld.a	a2,[a15]
+.L264:
+	mul	d15,d8,#28
+	addsc.a	a4,a2,d15,#0
+.L240:
+	call	Gpt_Hw_InitChannel
+.L241:
+	jeq	d2,#0,.L44
+.L45:
+	j	.L46
+.L44:
+	add	d8,#1
+.L42:
+	ld.bu	d15,[a15]4
+.L265:
+	jlt.u	d8,d15,.L43
+.L199:
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+.L266:
+	mov	d15,#1
+.L267:
+	st.b	[a15],d15
+.L46:
+.L41:
+.L38:
+	ret
+.L193:
+	
+__Gpt_Init_function_end:
+	.size	Gpt_Init,__Gpt_Init_function_end-Gpt_Init
+.L145:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_StartTimer',code,cluster('Gpt_StartTimer')
+	.sect	'.text.Gpt.Gpt_StartTimer'
+	.align	2
+	
+	.global	Gpt_StartTimer
+; Function Gpt_StartTimer
+.L126:
+Gpt_StartTimer:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L272:
+	jne	d15,#0,.L47
+.L48:
+	j	.L49
+.L47:
+	jlt.u	d4,#5,.L50
+.L51:
+	j	.L52
+.L50:
+	jge.u	d5,#0,.L53
+.L273:
+	mov.u	d15,#65535
+.L274:
+	jge.u	d15,d5,.L54
+.L55:
+.L54:
+.L53:
+	mov	d15,#0
+	jeq	d15,d4,.L56
+.L275:
+	mov	d15,#1
+	jeq	d15,d4,.L57
+.L276:
+	mov	d15,#2
+	jeq	d15,d4,.L58
+.L277:
+	mov	d15,#3
+	jeq	d15,d4,.L59
+.L278:
+	mov	d15,#4
+	jeq	d15,d4,.L60
+	j	.L61
+.L56:
+	lea	a4,0xf0001810
+	call	Check_Status
+.L242:
+	j	.L62
+.L57:
+	lea	a4,0xf0001814
+	call	Check_Status
+.L243:
+	j	.L63
+.L58:
+	lea	a4,0xf0001818
+	call	Check_Status
+.L244:
+	j	.L64
+.L59:
+	lea	a4,0xf000181c
+	call	Check_Status
+.L245:
+	j	.L65
+.L60:
+	lea	a4,0xf0001820
+	call	Check_Status
+.L246:
+	j	.L66
+.L61:
+.L66:
+.L65:
+.L64:
+.L63:
+.L62:
+.L52:
+.L49:
+	ret
+.L202:
+	
+__Gpt_StartTimer_function_end:
+	.size	Gpt_StartTimer,__Gpt_StartTimer_function_end-Gpt_StartTimer
+.L150:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_StopTimer',code,cluster('Gpt_StopTimer')
+	.sect	'.text.Gpt.Gpt_StopTimer'
+	.align	2
+	
+	.global	Gpt_StopTimer
+; Function Gpt_StopTimer
+.L128:
+Gpt_StopTimer:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L283:
+	jne	d15,#0,.L67
+.L68:
+	j	.L69
+.L67:
+	jlt.u	d4,#5,.L70
+.L71:
+	j	.L72
+.L70:
+	mov	d15,#0
+	jeq	d15,d4,.L73
+.L284:
+	mov	d15,#1
+	jeq	d15,d4,.L74
+.L285:
+	mov	d15,#2
+	jeq	d15,d4,.L75
+.L286:
+	mov	d15,#3
+	jeq	d15,d4,.L76
+.L287:
+	mov	d15,#4
+	jeq	d15,d4,.L77
+	j	.L78
+.L73:
+	ld.w	d15,0xf0001810
+.L288:
+	jz.t	d15:6,.L79
+.L289:
+	ld.w	d15,0xf0001810
+.L290:
+	st.w	0xf0001810,d15
+.L79:
+	j	.L80
+.L74:
+	ld.w	d15,0xf0001814
+.L291:
+	jz.t	d15:6,.L81
+.L292:
+	ld.w	d15,0xf0001814
+.L293:
+	st.w	0xf0001814,d15
+.L81:
+	j	.L82
+.L75:
+	ld.w	d15,0xf0001818
+.L294:
+	jz.t	d15:6,.L83
+.L295:
+	ld.w	d15,0xf0001818
+.L296:
+	st.w	0xf0001818,d15
+.L83:
+	j	.L84
+.L76:
+	ld.w	d15,0xf000181c
+.L297:
+	jz.t	d15:6,.L85
+.L298:
+	ld.w	d15,0xf000181c
+.L299:
+	st.w	0xf000181c,d15
+.L85:
+	j	.L86
+.L77:
+	ld.w	d15,0xf0001820
+.L300:
+	jz.t	d15:6,.L87
+.L301:
+	ld.w	d15,0xf0001820
+.L302:
+	st.w	0xf0001820,d15
+.L87:
+	j	.L88
+.L78:
+.L88:
+.L86:
+.L84:
+.L82:
+.L80:
+.L72:
+.L69:
+	ret
+.L206:
+	
+__Gpt_StopTimer_function_end:
+	.size	Gpt_StopTimer,__Gpt_StopTimer_function_end-Gpt_StopTimer
+.L155:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_EnableNotification',code,cluster('Gpt_EnableNotification')
+	.sect	'.text.Gpt.Gpt_EnableNotification'
+	.align	2
+	
+	.global	Gpt_EnableNotification
+; Function Gpt_EnableNotification
+.L130:
+Gpt_EnableNotification:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L307:
+	jeq	d15,#1,.L89
+.L90:
+	j	.L91
+.L89:
+	jlt.u	d4,#5,.L92
+.L93:
+	j	.L94
+.L92:
+.L94:
+.L91:
+	ret
+.L208:
+	
+__Gpt_EnableNotification_function_end:
+	.size	Gpt_EnableNotification,__Gpt_EnableNotification_function_end-Gpt_EnableNotification
+.L160:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_DisableNotification',code,cluster('Gpt_DisableNotification')
+	.sect	'.text.Gpt.Gpt_DisableNotification'
+	.align	2
+	
+	.global	Gpt_DisableNotification
+; Function Gpt_DisableNotification
+.L132:
+Gpt_DisableNotification:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L312:
+	jeq	d15,#1,.L95
+.L96:
+	j	.L97
+.L95:
+	jlt.u	d4,#5,.L98
+.L99:
+	j	.L100
+.L98:
+.L100:
+.L97:
+	ret
+.L210:
+	
+__Gpt_DisableNotification_function_end:
+	.size	Gpt_DisableNotification,__Gpt_DisableNotification_function_end-Gpt_DisableNotification
+.L165:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_SetMode',code,cluster('Gpt_SetMode')
+	.sect	'.text.Gpt.Gpt_SetMode'
+	.align	2
+	
+	.global	Gpt_SetMode
+; Function Gpt_SetMode
+.L134:
+Gpt_SetMode:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L317:
+	jeq	d15,#1,.L101
+.L318:
+	j	.L102
+.L101:
+	movh.a	a15,#@his(Gpt_Config)
+.L247:
+	lea	a15,[a15]@los(Gpt_Config)
+.L217:
+	mov	d0,#0
+.L248:
+	j	.L103
+.L104:
+	jne	d4,#0,.L105
+.L319:
+	j	.L106
+.L105:
+.L106:
+	add	d0,#1
+.L103:
+	ld.bu	d15,[a15]4
+.L320:
+	jlt.u	d0,d15,.L104
+.L102:
+	ret
+.L212:
+	
+__Gpt_SetMode_function_end:
+	.size	Gpt_SetMode,__Gpt_SetMode_function_end-Gpt_SetMode
+.L170:
+	; End of function
+	
+	.sdecl	'.text.Gpt.Gpt_GetTimeElapsed',code,cluster('Gpt_GetTimeElapsed')
+	.sect	'.text.Gpt.Gpt_GetTimeElapsed'
+	.align	2
+	
+	.global	Gpt_GetTimeElapsed
+; Function Gpt_GetTimeElapsed
+.L136:
+Gpt_GetTimeElapsed:	.type	func
+	movh.a	a15,#@his(Gpt_Init_Status)
+	lea	a15,[a15]@los(Gpt_Init_Status)
+	ld.bu	d15,[a15]
+.L378:
+	jeq	d15,#1,.L107
+.L108:
+	mov	d2,#0
+.L379:
+	j	.L109
+.L107:
+	jlt.u	d4,#5,.L110
+.L111:
+	mov	d2,#0
+.L380:
+	j	.L112
+.L110:
+	movh.a	a2,#@his(Gpt_Config)
+.L249:
+	lea	a2,[a2]@los(Gpt_Config)
+.L233:
+	mov	d0,#0
+.L250:
+	j	.L113
+.L114:
+	ld.a	a15,[a2]
+.L381:
+	mul	d15,d0,#28
+	addsc.a	a15,a15,d15,#0
+.L251:
+	ld.bu	d15,[a15]5
+.L382:
+	jne	d15,#1,.L115
+.L115:
+	add	d0,#1
+.L113:
+	ld.bu	d15,[a2]4
+.L383:
+	jlt.u	d0,d15,.L114
+.L234:
+	mov	d2,#1
+.L384:
+	j	.L116
+.L116:
+.L112:
+.L109:
+	ret
+.L229:
+	
+__Gpt_GetTimeElapsed_function_end:
+	.size	Gpt_GetTimeElapsed,__Gpt_GetTimeElapsed_function_end-Gpt_GetTimeElapsed
+.L190:
+	; End of function
+	
+	.sdecl	'.data.Gpt.Gpt_Init_Status',data,cluster('Gpt_Init_Status')
+	.sect	'.data.Gpt.Gpt_Init_Status'
+Gpt_Init_Status:	.type	object
+	.size	Gpt_Init_Status,1
+	.space	1
+	.calls	'Gpt_Init','Validate_Config'
+	.calls	'Gpt_Init','Enable_Module'
+	.calls	'Gpt_Init','Gpt_Hw_InitChannel'
+	.calls	'Gpt_StartTimer','Check_Status'
+	.calls	'Enable_Module','',0
+	.calls	'Check_Status','',0
+	.calls	'Validate_Config','',0
+	.calls	'Gpt_Init','',0
+	.calls	'Gpt_StartTimer','',0
+	.calls	'Gpt_StopTimer','',0
+	.calls	'Gpt_EnableNotification','',0
+	.calls	'Gpt_DisableNotification','',0
+	.calls	'Gpt_SetMode','',0
+	.extern	Gpt_Config
+	.extern	Gpt_Hw_InitChannel
+	.calls	'Gpt_GetTimeElapsed','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L138:
+	.word	1407
+	.half	3
+	.word	.L139
+	.byte	4
+.L137:
+	.byte	1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L140
+.L200:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3,1,59,9,1,4
+	.byte	'GPT_HW_GPT12_T2',0,0,4
+	.byte	'GPT_HW_GPT12_T3',0,1,4
+	.byte	'GPT_HW_GPT12_T4',0,2,4
+	.byte	'GPT_HW_GPT12_T5',0,3,4
+	.byte	'GPT_HW_GPT12_T6',0,4,0,3,1,52,9,1,4
+	.byte	'GPT_CH_MODE_CONTINUOUS',0,0,4
+	.byte	'GPT_CH_MODE_ONESHOT',0,1,0,3,1,72,9,1,4
+	.byte	'GPT_T3_INPUT_NONE',0,0,4
+	.byte	'GPT_T3_INPUT_A',0,1,4
+	.byte	'GPT_T3_INPUT_B',0,2,0,3,1,79,9,1,4
+	.byte	'GPT_T3_OUTPUT_NONE',0,0,4
+	.byte	'GPT_T3_OUTPUT_P10_6',0,1,4
+	.byte	'GPT_T3_OUTPUT_P21_6',0,2,0
+.L219:
+	.byte	2
+	.byte	'unsigned char',0,1,8,5,1,1,6
+	.word	508
+	.byte	7,1,90,9,28,8
+	.byte	'GptChannelId',0
+	.word	190
+	.byte	4,2,35,0,8
+	.byte	'HwChannel',0
+	.word	211
+	.byte	1,2,35,4,8
+	.byte	'GptChannelMode',0
+	.word	307
+	.byte	1,2,35,5,8
+	.byte	'TickValueMax',0
+	.word	190
+	.byte	4,2,35,6,8
+	.byte	'TickFrequency',0
+	.word	190
+	.byte	4,2,35,10,8
+	.byte	'InputSelection',0
+	.word	360
+	.byte	1,2,35,14,8
+	.byte	'OutputSelection',0
+	.word	420
+	.byte	1,2,35,15,8
+	.byte	'EnableWakeup',0
+	.word	491
+	.byte	1,2,35,16,8
+	.byte	'GptNotification',0
+	.word	511
+	.byte	4,2,35,20,8
+	.byte	'NotificationEnabled',0
+	.word	491
+	.byte	1,2,35,24,0,9
+	.word	516
+.L197:
+	.byte	6
+	.word	757
+	.byte	7,1,115,9,8,8
+	.byte	'ChannelConfigPtr',0
+	.word	762
+	.byte	4,2,35,0,8
+	.byte	'NumberOfChannels',0
+	.word	491
+	.byte	1,2,35,4,0,9
+	.word	767
+.L194:
+	.byte	6
+	.word	825
+.L203:
+	.byte	2
+	.byte	'unsigned int',0,4,7
+.L213:
+	.byte	3,1,124,9,1,4
+	.byte	'NORMAL_MODE',0,0,4
+	.byte	'SLEEP_MODE',0,1,0,10
+	.byte	'Gpt_Hw_InitChannel',0,2,16,16
+	.word	491
+	.byte	1,1,1,1,11
+	.byte	'ChannelPtr',0,2,16,64
+	.word	762
+	.byte	0,12
+	.word	835
+.L227:
+	.byte	6
+	.word	935
+	.byte	2
+	.byte	'short int',0,2,5,13
+	.byte	'__wchar_t',0,3,1,1
+	.word	945
+	.byte	13
+	.byte	'__size_t',0,3,1,1
+	.word	835
+	.byte	2
+	.byte	'int',0,4,5,13
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	993
+	.byte	14,1,6
+	.word	1020
+	.byte	13
+	.byte	'__codeptr',0,3,1,1
+	.word	1022
+	.byte	13
+	.byte	'boolean',0,4,104,29
+	.word	491
+	.byte	13
+	.byte	'uint8',0,4,108,29
+	.word	491
+	.byte	2
+	.byte	'unsigned short int',0,2,7,13
+	.byte	'uint16',0,4,112,29
+	.word	1075
+	.byte	13
+	.byte	'uint32',0,4,116,29
+	.word	190
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,13
+	.byte	'uint64',0,4,121,29
+	.word	1127
+	.byte	13
+	.byte	'Std_ReturnType',0,5,7,17
+	.word	491
+	.byte	13
+	.byte	'GptChannelMode',0,1,57,2
+	.word	307
+	.byte	13
+	.byte	'Gpt_HwChannelType',0,1,66,2
+	.word	211
+	.byte	13
+	.byte	'GptChannelId',0,1,70,16
+	.word	190
+	.byte	13
+	.byte	'Gpt_T3InputType',0,1,77,3
+	.word	360
+	.byte	13
+	.byte	'Gpt_T3OutputType',0,1,84,3
+	.word	420
+	.byte	13
+	.byte	'Gpt_ChannelConfigType',0,1,103,2
+	.word	516
+	.byte	13
+	.byte	'Gpt_ConfigType',0,1,119,2
+	.word	767
+	.byte	9
+	.word	767
+	.byte	15
+	.byte	'Gpt_Config',0,1,121,29
+	.word	1363
+	.byte	1,1,13
+	.byte	'Gpt_ModeType',0,1,127,2
+	.word	851
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L139:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,4,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,40,0,3,8,28,13,0,0,5,21,0,54,15,39,12,0,0,6,15,0,73,19,0,0,7,19,1,58,15,59,15,57,15,11,15,0,0,8
+	.byte	13,0,3,8,73,19,11,15,56,9,0,0,9,38,0,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,11,5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,53,0,73,19,0,0,13,22,0,3,8,58,15,59,15,57,15,73,19,0
+	.byte	0,14,21,0,54,15,0,0,15,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L140:
+	.word	.L253-.L252
+.L252:
+	.half	3
+	.word	.L255-.L254
+.L254:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'C:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\MCAL\\Gpt\\Gpt.h',0,0,0,0
+	.byte	'C:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\MCAL\\Gpt\\Gpt_Hw.h',0,0,0,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0
+	.byte	'C:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\Includes\\Std_Types.h',0,0,0,0,0
+.L255:
+.L253:
+	.sdecl	'.debug_info',debug,cluster('Gpt_Init')
+	.sect	'.debug_info'
+.L141:
+	.word	336
+	.half	3
+	.word	.L142
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L144,.L143
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_Init',0,1,82,6,1,1,1
+	.word	.L124,.L193,.L123
+	.byte	4
+	.byte	'ConfigPtr',0,1,82,37
+	.word	.L194,.L195
+	.byte	5
+	.word	.L124,.L193
+	.byte	6
+	.byte	'SelectedConfig',0,1,84,27
+	.word	.L194,.L196
+	.byte	6
+	.byte	'Channel_cfg',0,1,85,34
+	.word	.L197,.L198
+	.byte	5
+	.word	.L39,.L199
+	.byte	6
+	.byte	'index',0,1,100,16
+	.word	.L200,.L201
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_Init')
+	.sect	'.debug_abbrev'
+.L142:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_Init')
+	.sect	'.debug_line'
+.L143:
+	.word	.L257-.L256
+.L256:
+	.half	3
+	.word	.L259-.L258
+.L258:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L259:
+	.byte	5,21,7,0,5,2
+	.word	.L124
+	.byte	3,214,0,1,5,48,7,9
+	.half	.L260-.L124
+	.byte	1,5,59,9
+	.half	.L261-.L260
+	.byte	1,5,45,9
+	.half	.L34-.L261
+	.byte	1,5,24,9
+	.half	.L35-.L34
+	.byte	3,2,1,5,5,9
+	.half	.L262-.L35
+	.byte	1,5,9,7,9
+	.half	.L37-.L262
+	.byte	3,3,1,5,21,9
+	.half	.L36-.L37
+	.byte	3,2,1,5,5,9
+	.half	.L263-.L36
+	.byte	1,5,9,7,9
+	.half	.L40-.L263
+	.byte	3,3,1,5,21,9
+	.half	.L39-.L40
+	.byte	3,3,1,5,63,9
+	.half	.L239-.L39
+	.byte	1,5,38,9
+	.half	.L43-.L239
+	.byte	3,2,1,5,56,9
+	.half	.L264-.L43
+	.byte	1,5,31,9
+	.half	.L240-.L264
+	.byte	3,1,1,5,9,9
+	.half	.L241-.L240
+	.byte	1,5,14,7,9
+	.half	.L45-.L241
+	.byte	3,3,1,5,69,9
+	.half	.L44-.L45
+	.byte	3,122,1,5,45,9
+	.half	.L42-.L44
+	.byte	1,5,63,9
+	.half	.L265-.L42
+	.byte	1,5,5,7,9
+	.half	.L199-.L265
+	.byte	3,10,1,5,22,9
+	.half	.L266-.L199
+	.byte	1,5,21,9
+	.half	.L267-.L266
+	.byte	1,5,1,9
+	.half	.L38-.L267
+	.byte	3,1,1,7,9
+	.half	.L145-.L38
+	.byte	0,1,1
+.L257:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_Init')
+	.sect	'.debug_ranges'
+.L144:
+	.word	-1,.L124,0,.L145-.L124,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_info'
+.L146:
+	.word	278
+	.half	3
+	.word	.L147
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L149,.L148
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_StartTimer',0,1,113,6,1,1,1
+	.word	.L126,.L202,.L125
+	.byte	4
+	.byte	'Channel',0,1,113,37
+	.word	.L203,.L204
+	.byte	4
+	.byte	'Value',0,1,113,60
+	.word	.L203,.L205
+	.byte	5
+	.word	.L126,.L202
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_abbrev'
+.L147:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_line'
+.L148:
+	.word	.L269-.L268
+.L268:
+	.half	3
+	.word	.L271-.L270
+.L270:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L271:
+	.byte	5,8,7,0,5,2
+	.word	.L126
+	.byte	3,242,0,1,5,5,9
+	.half	.L272-.L126
+	.byte	1,5,9,7,9
+	.half	.L48-.L272
+	.byte	3,3,1,5,5,9
+	.half	.L47-.L48
+	.byte	3,3,1,5,9,7,9
+	.half	.L51-.L47
+	.byte	3,3,1,5,8,9
+	.half	.L50-.L51
+	.byte	3,2,1,5,25,7,9
+	.half	.L273-.L50
+	.byte	1,5,24,9
+	.half	.L274-.L273
+	.byte	1,5,10,7,9
+	.half	.L53-.L274
+	.byte	3,6,1,9
+	.half	.L275-.L53
+	.byte	3,1,1,9
+	.half	.L276-.L275
+	.byte	3,1,1,9
+	.half	.L277-.L276
+	.byte	3,1,1,9
+	.half	.L278-.L277
+	.byte	3,1,1,5,43,9
+	.half	.L56-.L278
+	.byte	3,124,1,5,51,9
+	.half	.L242-.L56
+	.byte	1,5,43,9
+	.half	.L57-.L242
+	.byte	3,1,1,5,51,9
+	.half	.L243-.L57
+	.byte	1,5,43,9
+	.half	.L58-.L243
+	.byte	3,1,1,5,51,9
+	.half	.L244-.L58
+	.byte	1,5,43,9
+	.half	.L59-.L244
+	.byte	3,1,1,5,51,9
+	.half	.L245-.L59
+	.byte	1,5,43,9
+	.half	.L60-.L245
+	.byte	3,1,1,5,51,9
+	.half	.L246-.L60
+	.byte	1,5,1,9
+	.half	.L49-.L246
+	.byte	3,13,1,7,9
+	.half	.L150-.L49
+	.byte	0,1,1
+.L269:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_ranges'
+.L149:
+	.word	-1,.L126,0,.L150-.L126,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_info'
+.L151:
+	.word	261
+	.half	3
+	.word	.L152
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L154,.L153
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_StopTimer',0,1,151,1,6,1,1,1
+	.word	.L128,.L206,.L127
+	.byte	4
+	.byte	'Channel',0,1,151,1,36
+	.word	.L203,.L207
+	.byte	5
+	.word	.L128,.L206
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_abbrev'
+.L152:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_line'
+.L153:
+	.word	.L280-.L279
+.L279:
+	.half	3
+	.word	.L282-.L281
+.L281:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L282:
+	.byte	5,8,7,0,5,2
+	.word	.L128
+	.byte	3,152,1,1,5,5,9
+	.half	.L283-.L128
+	.byte	1,5,9,7,9
+	.half	.L68-.L283
+	.byte	3,3,1,5,5,9
+	.half	.L67-.L68
+	.byte	3,3,1,5,9,7,9
+	.half	.L71-.L67
+	.byte	3,3,1,5,11,9
+	.half	.L70-.L71
+	.byte	3,4,1,9
+	.half	.L284-.L70
+	.byte	3,1,1,9
+	.half	.L285-.L284
+	.byte	3,1,1,9
+	.half	.L286-.L285
+	.byte	3,1,1,9
+	.half	.L287-.L286
+	.byte	3,1,1,5,34,9
+	.half	.L73-.L287
+	.byte	3,124,1,5,29,9
+	.half	.L288-.L73
+	.byte	1,5,56,7,9
+	.half	.L289-.L288
+	.byte	1,5,62,9
+	.half	.L290-.L289
+	.byte	1,5,75,9
+	.half	.L79-.L290
+	.byte	1,5,34,9
+	.half	.L74-.L79
+	.byte	3,1,1,5,29,9
+	.half	.L291-.L74
+	.byte	1,5,56,7,9
+	.half	.L292-.L291
+	.byte	1,5,62,9
+	.half	.L293-.L292
+	.byte	1,5,75,9
+	.half	.L81-.L293
+	.byte	1,5,34,9
+	.half	.L75-.L81
+	.byte	3,1,1,5,29,9
+	.half	.L294-.L75
+	.byte	1,5,56,7,9
+	.half	.L295-.L294
+	.byte	1,5,62,9
+	.half	.L296-.L295
+	.byte	1,5,75,9
+	.half	.L83-.L296
+	.byte	1,5,34,9
+	.half	.L76-.L83
+	.byte	3,1,1,5,29,9
+	.half	.L297-.L76
+	.byte	1,5,56,7,9
+	.half	.L298-.L297
+	.byte	1,5,62,9
+	.half	.L299-.L298
+	.byte	1,5,75,9
+	.half	.L85-.L299
+	.byte	1,5,34,9
+	.half	.L77-.L85
+	.byte	3,1,1,5,29,9
+	.half	.L300-.L77
+	.byte	1,5,56,7,9
+	.half	.L301-.L300
+	.byte	1,5,62,9
+	.half	.L302-.L301
+	.byte	1,5,75,9
+	.half	.L87-.L302
+	.byte	1,5,1,9
+	.half	.L69-.L87
+	.byte	3,13,1,7,9
+	.half	.L155-.L69
+	.byte	0,1,1
+.L280:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_ranges'
+.L154:
+	.word	-1,.L128,0,.L155-.L128,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_info'
+.L156:
+	.word	270
+	.half	3
+	.word	.L157
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L159,.L158
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_EnableNotification',0,1,185,1,6,1,1,1
+	.word	.L130,.L208,.L129
+	.byte	4
+	.byte	'Channel',0,1,185,1,45
+	.word	.L203,.L209
+	.byte	5
+	.word	.L130,.L208
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_abbrev'
+.L157:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_line'
+.L158:
+	.word	.L304-.L303
+.L303:
+	.half	3
+	.word	.L306-.L305
+.L305:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L306:
+	.byte	5,9,7,0,5,2
+	.word	.L130
+	.byte	3,186,1,1,5,5,9
+	.half	.L307-.L130
+	.byte	1,5,11,7,9
+	.half	.L90-.L307
+	.byte	3,3,1,5,5,9
+	.half	.L89-.L90
+	.byte	3,3,1,5,13,7,9
+	.half	.L93-.L89
+	.byte	3,3,1,5,1,9
+	.half	.L91-.L93
+	.byte	3,3,1,7,9
+	.half	.L160-.L91
+	.byte	0,1,1
+.L304:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_ranges'
+.L159:
+	.word	-1,.L130,0,.L160-.L130,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_info'
+.L161:
+	.word	271
+	.half	3
+	.word	.L162
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L164,.L163
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_DisableNotification',0,1,200,1,6,1,1,1
+	.word	.L132,.L210,.L131
+	.byte	4
+	.byte	'Channel',0,1,200,1,46
+	.word	.L203,.L211
+	.byte	5
+	.word	.L132,.L210
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_abbrev'
+.L162:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_line'
+.L163:
+	.word	.L309-.L308
+.L308:
+	.half	3
+	.word	.L311-.L310
+.L310:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L311:
+	.byte	5,9,7,0,5,2
+	.word	.L132
+	.byte	3,201,1,1,5,5,9
+	.half	.L312-.L132
+	.byte	1,5,7,7,9
+	.half	.L96-.L312
+	.byte	3,3,1,5,5,9
+	.half	.L95-.L96
+	.byte	3,3,1,5,7,7,9
+	.half	.L99-.L95
+	.byte	3,3,1,5,1,9
+	.half	.L97-.L99
+	.byte	3,3,1,7,9
+	.half	.L165-.L97
+	.byte	0,1,1
+.L309:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_ranges'
+.L164:
+	.word	-1,.L132,0,.L165-.L132,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_info'
+.L166:
+	.word	352
+	.half	3
+	.word	.L167
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L169,.L168
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_SetMode',0,1,215,1,6,1,1,1
+	.word	.L134,.L212,.L133
+	.byte	4
+	.byte	'Mode',0,1,215,1,31
+	.word	.L213,.L214
+	.byte	5
+	.word	.L134,.L212
+	.byte	5
+	.word	.L101,.L212
+	.byte	6
+	.byte	'SelectedConfig',0,1,221,1,27
+	.word	.L194,.L215
+	.byte	6
+	.byte	'Channel_Config',0,1,222,1,34
+	.word	.L197,.L216
+	.byte	5
+	.word	.L217,.L102
+	.byte	6
+	.byte	'index',0,1,223,1,16
+	.word	.L200,.L218
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_abbrev'
+.L167:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_line'
+.L168:
+	.word	.L314-.L313
+.L313:
+	.half	3
+	.word	.L316-.L315
+.L315:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L316:
+	.byte	5,9,7,0,5,2
+	.word	.L134
+	.byte	3,216,1,1,5,5,9
+	.half	.L317-.L134
+	.byte	1,5,9,7,9
+	.half	.L318-.L317
+	.byte	3,2,1,5,43,9
+	.half	.L101-.L318
+	.byte	3,2,1,5,21,9
+	.half	.L217-.L101
+	.byte	3,2,1,5,62,9
+	.half	.L248-.L217
+	.byte	1,5,8,9
+	.half	.L104-.L248
+	.byte	3,3,1,5,66,7,9
+	.half	.L319-.L104
+	.byte	3,127,1,5,68,9
+	.half	.L106-.L319
+	.byte	3,126,1,5,44,9
+	.half	.L103-.L106
+	.byte	1,5,62,9
+	.half	.L320-.L103
+	.byte	1,5,1,7,9
+	.half	.L102-.L320
+	.byte	3,11,1,7,9
+	.half	.L170-.L102
+	.byte	0,1,1
+.L314:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_ranges'
+.L169:
+	.word	-1,.L134,0,.L170-.L134,0,0
+	.sdecl	'.debug_info',debug,cluster('Validate_Config')
+	.sect	'.debug_info'
+.L171:
+	.word	324
+	.half	3
+	.word	.L172
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L174,.L173
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Validate_Config',0,1,38,16
+	.word	.L219
+	.byte	1,1
+	.word	.L122,.L220,.L121
+	.byte	4
+	.byte	'SelectedConfig',0,1,38,54
+	.word	.L194,.L221
+	.byte	5
+	.word	.L122,.L220
+	.byte	6
+	.byte	'Channel_cfg',0,1,41,34
+	.word	.L197,.L222
+	.byte	5
+	.word	.L19,.L223
+	.byte	6
+	.byte	'index',0,1,59,20
+	.word	.L200,.L224
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Validate_Config')
+	.sect	'.debug_abbrev'
+.L172:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Validate_Config')
+	.sect	'.debug_line'
+.L173:
+	.word	.L322-.L321
+.L321:
+	.half	3
+	.word	.L324-.L323
+.L323:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L324:
+	.byte	5,12,7,0,5,2
+	.word	.L122
+	.byte	3,43,1,5,56,7,9
+	.half	.L325-.L122
+	.byte	1,5,75,9
+	.half	.L326-.L325
+	.byte	1,5,96,7,9
+	.half	.L327-.L326
+	.byte	1,5,115,9
+	.half	.L328-.L327
+	.byte	1,5,153,1,7,9
+	.half	.L329-.L328
+	.byte	1,5,173,1,9
+	.half	.L330-.L329
+	.byte	1,5,24,7,9
+	.half	.L8-.L330
+	.byte	3,2,1,5,17,9
+	.half	.L331-.L8
+	.byte	1,5,27,9
+	.half	.L11-.L331
+	.byte	3,3,1,5,18,9
+	.half	.L332-.L11
+	.byte	3,2,1,9
+	.half	.L333-.L332
+	.byte	3,1,1,9
+	.half	.L334-.L333
+	.byte	3,1,1,9
+	.half	.L335-.L334
+	.byte	3,1,1,9
+	.half	.L336-.L335
+	.byte	3,1,1,5,36,9
+	.half	.L17-.L336
+	.byte	1,5,29,9
+	.half	.L18-.L17
+	.byte	3,2,1,5,22,9
+	.half	.L337-.L18
+	.byte	1,5,25,9
+	.half	.L19-.L337
+	.byte	3,2,1,5,67,9
+	.half	.L236-.L19
+	.byte	1,5,42,9
+	.half	.L22-.L236
+	.byte	3,2,1,5,60,9
+	.half	.L338-.L22
+	.byte	1,5,27,9
+	.half	.L237-.L338
+	.byte	3,2,1,5,16,9
+	.half	.L339-.L237
+	.byte	1,5,61,7,9
+	.half	.L340-.L339
+	.byte	1,5,78,9
+	.half	.L341-.L340
+	.byte	1,5,76,9
+	.half	.L342-.L341
+	.byte	1,5,23,7,9
+	.half	.L23-.L342
+	.byte	3,2,1,5,16,9
+	.half	.L343-.L23
+	.byte	1,5,27,9
+	.half	.L24-.L343
+	.byte	3,2,1,5,16,9
+	.half	.L344-.L24
+	.byte	1,5,83,7,9
+	.half	.L345-.L344
+	.byte	1,5,99,9
+	.half	.L346-.L345
+	.byte	1,5,24,7,9
+	.half	.L347-.L346
+	.byte	3,2,1,5,17,9
+	.half	.L348-.L347
+	.byte	1,5,27,9
+	.half	.L26-.L348
+	.byte	3,4,1,5,16,9
+	.half	.L349-.L26
+	.byte	1,5,79,7,9
+	.half	.L350-.L349
+	.byte	1,5,95,9
+	.half	.L351-.L350
+	.byte	1,5,128,1,7,9
+	.half	.L352-.L351
+	.byte	1,5,144,1,9
+	.half	.L353-.L352
+	.byte	1,5,24,7,9
+	.half	.L354-.L353
+	.byte	3,2,1,5,17,9
+	.half	.L355-.L354
+	.byte	1,5,73,9
+	.half	.L29-.L355
+	.byte	3,112,1,5,49,9
+	.half	.L21-.L29
+	.byte	1,5,67,9
+	.half	.L356-.L21
+	.byte	1,5,12,7,9
+	.half	.L223-.L356
+	.byte	3,20,1,5,5,9
+	.half	.L357-.L223
+	.byte	1,5,1,9
+	.half	.L12-.L357
+	.byte	3,1,1,7,9
+	.half	.L175-.L12
+	.byte	0,1,1
+.L322:
+	.sdecl	'.debug_ranges',debug,cluster('Validate_Config')
+	.sect	'.debug_ranges'
+.L174:
+	.word	-1,.L122,0,.L175-.L122,0,0
+	.sdecl	'.debug_info',debug,cluster('Enable_Module')
+	.sect	'.debug_info'
+.L176:
+	.word	242
+	.half	3
+	.word	.L177
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L179,.L178
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Enable_Module',0,1,19,16
+	.word	.L219
+	.byte	1,1
+	.word	.L118,.L225,.L117
+	.byte	4
+	.word	.L118,.L225
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Enable_Module')
+	.sect	'.debug_abbrev'
+.L177:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Enable_Module')
+	.sect	'.debug_line'
+.L178:
+	.word	.L359-.L358
+.L358:
+	.half	3
+	.word	.L361-.L360
+.L360:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L361:
+	.byte	5,4,7,0,5,2
+	.word	.L118
+	.byte	3,20,1,5,7,9
+	.half	.L362-.L118
+	.byte	1,5,8,9
+	.half	.L363-.L362
+	.byte	3,1,1,5,4,9
+	.half	.L364-.L363
+	.byte	1,5,15,7,9
+	.half	.L365-.L364
+	.byte	3,1,1,5,8,9
+	.half	.L366-.L365
+	.byte	1,5,10,9
+	.half	.L2-.L366
+	.byte	3,1,1,5,3,9
+	.half	.L367-.L2
+	.byte	1,5,1,9
+	.half	.L3-.L367
+	.byte	3,1,1,7,9
+	.half	.L180-.L3
+	.byte	0,1,1
+.L359:
+	.sdecl	'.debug_ranges',debug,cluster('Enable_Module')
+	.sect	'.debug_ranges'
+.L179:
+	.word	-1,.L118,0,.L180-.L118,0,0
+	.sdecl	'.debug_info',debug,cluster('Check_Status')
+	.sect	'.debug_info'
+.L181:
+	.word	258
+	.half	3
+	.word	.L182
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L184,.L183
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Check_Status',0,1,27,13,1,1
+	.word	.L120,.L226,.L119
+	.byte	4
+	.byte	'REGISTER',0,1,27,49
+	.word	.L227,.L228
+	.byte	5
+	.word	.L120,.L226
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Check_Status')
+	.sect	'.debug_abbrev'
+.L182:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Check_Status')
+	.sect	'.debug_line'
+.L183:
+	.word	.L369-.L368
+.L368:
+	.half	3
+	.word	.L371-.L370
+.L370:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L371:
+	.byte	5,8,7,0,5,2
+	.word	.L120
+	.byte	3,28,1,5,5,9
+	.half	.L372-.L120
+	.byte	1,5,11,9
+	.half	.L6-.L372
+	.byte	3,1,1,5,9,9
+	.half	.L5-.L6
+	.byte	3,2,1,5,17,9
+	.half	.L373-.L5
+	.byte	1,5,1,9
+	.half	.L7-.L373
+	.byte	3,3,1,7,9
+	.half	.L185-.L7
+	.byte	0,1,1
+.L369:
+	.sdecl	'.debug_ranges',debug,cluster('Check_Status')
+	.sect	'.debug_ranges'
+.L184:
+	.word	-1,.L120,0,.L185-.L120,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_info'
+.L186:
+	.word	366
+	.half	3
+	.word	.L187
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L189,.L188
+	.byte	2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_GetTimeElapsed',0,1,236,1,15
+	.word	.L203
+	.byte	1,1,1
+	.word	.L136,.L229,.L135
+	.byte	4
+	.byte	'Channel',0,1,236,1,50
+	.word	.L203,.L230
+	.byte	5
+	.word	.L136,.L229
+	.byte	5
+	.word	.L110,.L229
+	.byte	6
+	.byte	'SelectedConfig',0,1,249,1,30
+	.word	.L194,.L231
+	.byte	6
+	.byte	'Channel_Config',0,1,250,1,37
+	.word	.L197,.L232
+	.byte	5
+	.word	.L233,.L234
+	.byte	6
+	.byte	'index',0,1,251,1,19
+	.word	.L200,.L235
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_abbrev'
+.L187:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_line'
+.L188:
+	.word	.L375-.L374
+.L374:
+	.half	3
+	.word	.L377-.L376
+.L376:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../MCAL/Gpt/Gpt.c',0,0,0,0,0
+.L377:
+	.byte	5,13,7,0,5,2
+	.word	.L136
+	.byte	3,237,1,1,5,9,9
+	.half	.L378-.L136
+	.byte	1,5,20,7,9
+	.half	.L108-.L378
+	.byte	3,3,1,5,13,9
+	.half	.L379-.L108
+	.byte	1,5,9,9
+	.half	.L107-.L379
+	.byte	3,2,1,5,20,7,9
+	.half	.L111-.L107
+	.byte	3,3,1,5,13,9
+	.half	.L380-.L111
+	.byte	1,5,46,9
+	.half	.L110-.L380
+	.byte	3,3,1,5,24,9
+	.half	.L233-.L110
+	.byte	3,2,1,5,65,9
+	.half	.L250-.L233
+	.byte	1,5,43,9
+	.half	.L114-.L250
+	.byte	3,2,1,5,61,9
+	.half	.L381-.L114
+	.byte	1,5,29,9
+	.half	.L251-.L381
+	.byte	3,1,1,5,12,9
+	.half	.L382-.L251
+	.byte	1,5,71,7,9
+	.half	.L115-.L382
+	.byte	3,125,1,5,47,9
+	.half	.L113-.L115
+	.byte	1,5,65,9
+	.half	.L383-.L113
+	.byte	1,5,15,7,9
+	.half	.L234-.L383
+	.byte	3,8,1,5,8,9
+	.half	.L384-.L234
+	.byte	1,5,1,9
+	.half	.L109-.L384
+	.byte	3,1,1,7,9
+	.half	.L190-.L109
+	.byte	0,1,1
+.L375:
+	.sdecl	'.debug_ranges',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_ranges'
+.L189:
+	.word	-1,.L136,0,.L190-.L136,0,0
+	.sdecl	'.debug_info',debug,cluster('Gpt_Init_Status')
+	.sect	'.debug_info'
+.L191:
+	.word	218
+	.half	3
+	.word	.L192
+	.byte	4,1
+	.byte	'../MCAL/Gpt/Gpt.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L137
+	.byte	3
+	.byte	'Gpt_Init_Status',0,3,12,16
+	.word	.L219
+	.byte	5,3
+	.word	Gpt_Init_Status
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Gpt_Init_Status')
+	.sect	'.debug_abbrev'
+.L192:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Check_Status')
+	.sect	'.debug_loc'
+.L119:
+	.word	-1,.L120,0,.L226-.L120
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L228:
+	.word	-1,.L120,0,.L226-.L120
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Enable_Module')
+	.sect	'.debug_loc'
+.L117:
+	.word	-1,.L118,0,.L225-.L118
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_loc'
+.L211:
+	.word	-1,.L132,0,.L210-.L132
+	.half	1
+	.byte	84
+	.word	0,0
+.L131:
+	.word	-1,.L132,0,.L210-.L132
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_loc'
+.L209:
+	.word	-1,.L130,0,.L208-.L130
+	.half	1
+	.byte	84
+	.word	0,0
+.L129:
+	.word	-1,.L130,0,.L208-.L130
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_loc'
+.L230:
+	.word	-1,.L136,0,.L229-.L136
+	.half	1
+	.byte	84
+	.word	0,0
+.L232:
+	.word	-1,.L136,.L251-.L136,.L113-.L136
+	.half	1
+	.byte	111
+	.word	0,0
+.L135:
+	.word	-1,.L136,0,.L229-.L136
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L231:
+	.word	-1,.L136,.L249-.L136,.L109-.L136
+	.half	1
+	.byte	98
+	.word	0,0
+.L235:
+	.word	-1,.L136,.L250-.L136,.L109-.L136
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_Init')
+	.sect	'.debug_loc'
+.L198:
+	.word	-1,.L124,.L240-.L124,.L241-.L124
+	.half	1
+	.byte	100
+	.word	0,0
+.L195:
+	.word	-1,.L124,0,.L238-.L124
+	.half	1
+	.byte	100
+	.word	0,0
+.L123:
+	.word	-1,.L124,0,.L193-.L124
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L196:
+	.word	0,0
+.L201:
+	.word	-1,.L124,.L239-.L124,.L38-.L124
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_loc'
+.L216:
+	.word	0,0
+.L133:
+	.word	-1,.L134,0,.L212-.L134
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L214:
+	.word	-1,.L134,0,.L212-.L134
+	.half	1
+	.byte	84
+	.word	0,0
+.L215:
+	.word	-1,.L134,.L247-.L134,.L102-.L134
+	.half	1
+	.byte	111
+	.word	0,0
+.L218:
+	.word	-1,.L134,.L248-.L134,.L102-.L134
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_loc'
+.L204:
+	.word	-1,.L126,0,.L242-.L126
+	.half	1
+	.byte	84
+	.word	.L57-.L126,.L243-.L126
+	.half	1
+	.byte	84
+	.word	.L58-.L126,.L244-.L126
+	.half	1
+	.byte	84
+	.word	.L59-.L126,.L245-.L126
+	.half	1
+	.byte	84
+	.word	.L60-.L126,.L246-.L126
+	.half	1
+	.byte	84
+	.word	0,0
+.L125:
+	.word	-1,.L126,0,.L202-.L126
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L205:
+	.word	-1,.L126,0,.L242-.L126
+	.half	1
+	.byte	85
+	.word	.L57-.L126,.L243-.L126
+	.half	1
+	.byte	85
+	.word	.L58-.L126,.L244-.L126
+	.half	1
+	.byte	85
+	.word	.L59-.L126,.L245-.L126
+	.half	1
+	.byte	85
+	.word	.L60-.L126,.L246-.L126
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_loc'
+.L207:
+	.word	-1,.L128,0,.L206-.L128
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	-1,.L128,0,.L206-.L128
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Validate_Config')
+	.sect	'.debug_loc'
+.L222:
+	.word	-1,.L122,.L237-.L122,.L21-.L122
+	.half	1
+	.byte	111
+	.word	0,0
+.L221:
+	.word	-1,.L122,0,.L220-.L122
+	.half	1
+	.byte	100
+	.word	0,0
+.L121:
+	.word	-1,.L122,0,.L220-.L122
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L224:
+	.word	-1,.L122,.L236-.L122,.L12-.L122
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L385:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Enable_Module')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L118,.L225-.L118
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Check_Status')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L120,.L226-.L120
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Validate_Config')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L122,.L220-.L122
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Gpt_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L385,.L124,.L193-.L124
+	.sdecl	'.debug_frame',debug,cluster('Gpt_StartTimer')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L385,.L126,.L202-.L126
+	.sdecl	'.debug_frame',debug,cluster('Gpt_StopTimer')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L128,.L206-.L128
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Gpt_EnableNotification')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L130,.L208-.L130
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Gpt_DisableNotification')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L132,.L210-.L132
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Gpt_SetMode')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L134,.L212-.L134
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Gpt_GetTimeElapsed')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L385,.L136,.L229-.L136
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	; Module end

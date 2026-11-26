@@ -3,7 +3,7 @@
 #define GPT_HW_H
 
 #include <MCAL/Gpt/Gpt.h>
-#include <MCAL/Gpt/Gpt_Reg.h>
+//#include <MCAL/Gpt/Gpt_Reg.h>
 
 typedef struct
 {

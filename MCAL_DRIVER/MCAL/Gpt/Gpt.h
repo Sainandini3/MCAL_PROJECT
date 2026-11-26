@@ -23,7 +23,7 @@
 #define GPT_GETVERSIONINFO_ID          0x00U
 #define GPT_INIT_ID                    0x01U
 #define GPT_DEINIT_ID                  0x02U
-#define GPT_GETTIMEELAPSED_ID           0x03U
+#define GPT_GET_TIME_ELAPSED_ID           0x03U
 #define GPT_GETTIMEREMAINING_ID         0x04U
 #define GPT_STARTTIMER_ID               0x05U
 #define GPT_STOPTIMER_ID                0x06U
@@ -98,6 +98,7 @@ typedef struct
   Gpt_T3OutputType OutputSelection;
   boolean EnableWakeup;
   void (*GptNotification) (void);
+  boolean NotificationEnabled;
 
 }Gpt_ChannelConfigType;
 

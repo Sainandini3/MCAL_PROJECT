@@ -52,11 +52,12 @@ Std_ReturnType Gpt_Hw_InitChannel(const Gpt_ChannelConfigType *ChannelPtr)
         {
             *Gpt_HwRegisterMap[Index].ControlRegPtr|= (0U<<6);  //stop the timer
 
-            *Gpt_HwRegisterMap[Index].ControlRegPtr =   (*Gpt_HwRegisterMap[Index].ControlRegPtr & ~((1U<<3)-1)<<3 ) |  ((0U)&(1U<<3)-1)<<3;
+            *Gpt_HwRegisterMap[Index].ControlRegPtr =   (*Gpt_HwRegisterMap[Index].ControlRegPtr & ~(((1U<<3)-1)<<3 )) |  ((0U)&(1U<<3)-1)<<3;
 
             *Gpt_HwRegisterMap[Index].ControlRegPtr|= (0U<<7);  //up counter
 
            // prescaler pending
+            *Gpt_HwRegisterMap[Index].ControlRegPtr = (*Gpt_HwRegisterMap[Index].ControlRegPtr & ~(((1U<<2)-1)<<11 )) | ((2U)&(1U<<2)-1)<<11;
 
             *Gpt_HwRegisterMap[Index].CounterRegPtr=0u; //initialize the counter
             return E_OK;

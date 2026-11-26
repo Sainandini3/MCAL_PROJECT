@@ -1,4 +1,5 @@
 #include<MCAL/Gpt/Gpt.h>
+#include<MCAL/Gpt/Gpt_Hw.h>
 #include<MCAL/Gpt/Gpt_Cfg.h>
 #include<MCAL/Gpt/IfxGpt12_reg.h>
 
@@ -7,6 +8,11 @@
 #else
 #define GPT_REPORT_ERROR(ApiId, ErrorId) do { (void)(ApiId); (void)(ErrorId); } while (0)
 #endif
+
+static boolean Gpt_Init_Status =FALSE;
+//static boolean Running= FALSE;
+//static boolean Stopped= FALSE;
+//static boolean Expired= FALSE;
 
 static boolean Validate_Config(const Gpt_ConfigType* SelectedConfig);
 
@@ -18,7 +24,16 @@ static boolean Enable_Module(void)
   return FALSE;
 }
 
-static boolean Gpt_Init_Status =FALSE;
+static void Check_Status(volatile unsigned int *REGISTER)
+{
+    if(*REGISTER &(1U<<6)==0U){
+          GPT_REPORT_ERROR(GPT_STARTTIMER_ID ,GPT_E_BUSY);
+    }else{
+       *REGISTER|= (1U<<6);
+       // Running =TRUE;
+    }
+}
+
 
 static boolean Validate_Config(const Gpt_ConfigType* SelectedConfig)
 {
@@ -34,9 +49,7 @@ static boolean Validate_Config(const Gpt_ConfigType* SelectedConfig)
         switch(Channel_cfg->HwChannel)
         {
             case GPT_HW_GPT12_T2:
-
             case GPT_HW_GPT12_T3:
-
             case GPT_HW_GPT12_T4:
             case GPT_HW_GPT12_T5:
             case GPT_HW_GPT12_T6:  break;
@@ -87,7 +100,7 @@ void Gpt_Init(const Gpt_ConfigType* ConfigPtr)
     for(uint32 index=0;index< SelectedConfig->NumberOfChannels;index++)
      {
         Channel_cfg = &SelectedConfig->ChannelConfigPtr[index];
-        if(Gpt_Hw_InitChannel(&Channel_cfg) != E_OK)
+        if(Gpt_Hw_InitChannel(Channel_cfg) != E_OK)
          {
              GPT_REPORT_ERROR(GPT_INIT_ID, GPT_E_INIT_FAILED);
              return;
@@ -101,16 +114,146 @@ void Gpt_StartTimer(Gpt_ChannelType Channel, Gpt_ValueType Value)
 {
     if(Gpt_Init_Status == FALSE)
     {
-        GPT_REPORT_ERROR(GPT_INIT_ID, GPT_E_INIT_FAILED);
+        GPT_REPORT_ERROR(GPT_STARTTIMER_ID , GPT_E_UNINIT);
         return;
     }
+
+    if(Channel>4)
+    {
+        GPT_REPORT_ERROR(GPT_STARTTIMER_ID ,GPT_E_PARAM_CHANNEL);
+        return;
+    }
+    if(Value<0 && Value>65535)
+    {
+        GPT_REPORT_ERROR(GPT_STARTTIMER_ID ,GPT_E_PARAM_VALUE);
+    }
+    switch(Channel)
+    {
+    case GPT_HW_GPT12_T2:   Check_Status(&T2CON); break;
+    case GPT_HW_GPT12_T3:   Check_Status(&T3CON); break;
+    case GPT_HW_GPT12_T4:   Check_Status(&T4CON); break;
+    case GPT_HW_GPT12_T5:   Check_Status(&T5CON); break;
+    case GPT_HW_GPT12_T6:   Check_Status(&T6CON); break;
+    }
+    /*
+    switch(Channel)
+    {
+        case GPT_HW_GPT12_T2:   T2CON |= (1U<<6);  break;
+        case GPT_HW_GPT12_T3:   T3CON |= (1U<<6);  break;
+        case GPT_HW_GPT12_T4:   T4CON |= (1U<<6);  break;
+        case GPT_HW_GPT12_T5:   T5CON |= (1U<<6);  break;
+        case GPT_HW_GPT12_T6:   T6CON |= (1U<<6);  break;
+    }
+   */
+
 }
 
 void Gpt_StopTimer(Gpt_ChannelType Channel)
 {
     if(Gpt_Init_Status == FALSE)
     {
-        GPT_REPORT_ERROR(GPT_INIT_ID, GPT_E_INIT_FAILED);
+        GPT_REPORT_ERROR(GPT_STOPTIMER_ID, GPT_E_UNINIT);
         return;
     }
+
+    if(Channel>4)
+    {
+        GPT_REPORT_ERROR(GPT_STOPTIMER_ID,GPT_E_PARAM_CHANNEL);
+        return;
+    }
+    switch(Channel)
+    {
+     case GPT_HW_GPT12_T2:  if(( T2CON &(1U<<6))!=0)   T2CON |= (0U<<6);  break;
+     case GPT_HW_GPT12_T3:  if(( T3CON &(1U<<6))!=0)   T3CON |= (0U<<6);  break;
+     case GPT_HW_GPT12_T4:  if(( T4CON &(1U<<6))!=0)   T4CON |= (0U<<6);  break;
+     case GPT_HW_GPT12_T5:  if(( T5CON &(1U<<6))!=0)   T5CON |= (0U<<6);  break;
+     case GPT_HW_GPT12_T6:  if(( T6CON &(1U<<6))!=0)   T6CON |= (0U<<6);  break;
+
+    }
+ /*   switch(Channel)
+    {
+        case GPT_HW_GPT12_T2:   T2CON |= (0U<<6);  break;
+        case GPT_HW_GPT12_T3:   T3CON |= (0U<<6);  break;
+        case GPT_HW_GPT12_T4:   T4CON |= (0U<<6);  break;
+        case GPT_HW_GPT12_T5:   T5CON |= (0U<<6);  break;
+        case GPT_HW_GPT12_T6:   T6CON |= (0U<<6);  break;
+    }
+*/
+
+}
+
+void Gpt_EnableNotification(Gpt_ChannelType Channel)
+{
+    if( Gpt_Init_Status!=TRUE)
+    {
+          GPT_REPORT_ERROR(GPT_ENABLENOTIFICATION_ID  , GPT_E_UNINIT);
+          return;
+    }
+
+    if(Channel>4)
+    {
+            GPT_REPORT_ERROR(GPT_ENABLENOTIFICATION_ID ,GPT_E_PARAM_CHANNEL);
+            return;
+    }
+
+}
+void Gpt_DisableNotification(Gpt_ChannelType Channel)
+{
+    if( Gpt_Init_Status!=TRUE)
+    {
+      GPT_REPORT_ERROR(GPT_ENABLENOTIFICATION_ID  , GPT_E_UNINIT);
+      return;
+    }
+    if(Channel>4)
+    {
+      GPT_REPORT_ERROR(GPT_ENABLENOTIFICATION_ID ,GPT_E_PARAM_CHANNEL);
+      return;
+    }
+
+}
+void Gpt_SetMode(Gpt_ModeType Mode)
+{
+    if( Gpt_Init_Status!=TRUE)
+    {
+        return;
+    }
+    const Gpt_ConfigType *SelectedConfig=&Gpt_Config;
+    const Gpt_ChannelConfigType *Channel_Config=NULL_PTR;
+    for(uint32 index=0;index<SelectedConfig->NumberOfChannels;index++)
+    {
+         Channel_Config= &SelectedConfig->ChannelConfigPtr[index];
+       if(Mode == NORMAL_MODE )
+       {
+
+       }else
+       {
+
+       }
+    }
+}
+
+Gpt_ValueType Gpt_GetTimeElapsed(Gpt_ChannelType Channel)
+{
+        if( Gpt_Init_Status!=TRUE)
+        {
+            GPT_REPORT_ERROR(GPT_GET_TIME_ELAPSED_ID , GPT_E_UNINIT);
+            return 0;
+        }
+        if(Channel>4)
+        {
+            GPT_REPORT_ERROR(GPT_GET_TIME_ELAPSED_ID , GPT_E_PARAM_CHANNEL);
+            return 0;
+        }
+
+       const Gpt_ConfigType *SelectedConfig=&Gpt_Config;
+       const Gpt_ChannelConfigType *Channel_Config=NULL_PTR;
+       for(uint32 index=0;index<SelectedConfig->NumberOfChannels;index++)
+       {
+           Channel_Config= &SelectedConfig->ChannelConfigPtr[index];
+           if(Channel_Config->GptChannelMode == GPT_CH_MODE_ONESHOT)
+           {
+
+           }
+       }
+       return 1;
 }

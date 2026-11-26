@@ -14,13 +14,9 @@ Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cf
 "C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h" :
 Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h"
 "C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h" :
-Gpt.o :	..\MCAL\Gpt\Gpt_Hw.h
-..\MCAL\Gpt\Gpt_Hw.h :
-Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Reg.h"
-"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Reg.h" :
-Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\IfxGpt12_reg.h"
-"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\IfxGpt12_reg.h" :
-Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\IfxGpt12_regdef.h"
-"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\IfxGpt12_regdef.h" :
-Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\Ifx_TypesReg.h"
-"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\Libraries\\Infra\\Sfr\\TC39xB\Ifx_TypesReg.h" :
+Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Hw.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Hw.h" :
+Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h" :
+Gpt.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\IfxGpt12_reg.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\IfxGpt12_reg.h" :

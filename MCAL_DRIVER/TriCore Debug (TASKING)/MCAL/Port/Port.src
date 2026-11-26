@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc22036a --dep-file=MCAL/Port/Port.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc39xb -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Configurations -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Includes -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Det -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Dio -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Gpt -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Ocu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCU -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o MCAL/Port/Port.src ../MCAL/Port/Port.c"
+	.compiler_invocation	"ctc -f cc5640a --dep-file=MCAL/Port/Port.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc39xb -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Configurations -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Includes -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Det -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Dio -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Gpt -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Ocu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCU -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o MCAL/Port/Port.src ../MCAL/Port/Port.c"
 	.compiler_name		"ctc"
 	;source	'../MCAL/Port/Port.c'
 
@@ -1558,39 +1558,39 @@ Port_RuntimeMode:	.type	object
 	.byte	'Port_Tc397EncodeInput',0,1,32,9
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'InputPull',0,1,33,24
+	.byte	'InputPull',0,1,32,51
 	.word	209
 	.byte	7
-	.byte	'HardwareMode',0,1,34,13
+	.byte	'HardwareMode',0,1,32,70
 	.word	303
 	.byte	0,3,1,14,9,1,4
 	.byte	'PORT_OUTPUT_PUSH_PULL',0,0,4
 	.byte	'PORT_OUTPUT_OPEN_DRAIN',0,1,0,6
-	.byte	'Port_Tc397EncodeOutput',0,1,37,9
+	.byte	'Port_Tc397EncodeOutput',0,1,34,9
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'PortNumber',0,1,38,11
+	.byte	'PortNumber',0,1,34,39
 	.word	192
 	.byte	7
-	.byte	'PinNumber',0,1,39,11
+	.byte	'PinNumber',0,1,34,56
 	.word	192
 	.byte	7
-	.byte	'OutputSelection',0,1,40,11
+	.byte	'OutputSelection',0,1,34,72
 	.word	192
 	.byte	7
-	.byte	'OutputType',0,1,41,21
+	.byte	'OutputType',0,1,34,104
 	.word	382
 	.byte	7
-	.byte	'HardwareMode',0,1,42,13
+	.byte	'HardwareMode',0,1,34,124
 	.word	303
 	.byte	0,6
-	.byte	'Port_Tc397IsPinSupported',0,1,45,9
+	.byte	'Port_Tc397IsPinSupported',0,1,36,9
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'PortNumber',0,1,46,11
+	.byte	'PortNumber',0,1,36,41
 	.word	192
 	.byte	7
-	.byte	'PinNumber',0,1,47,11
+	.byte	'PinNumber',0,1,36,58
 	.word	192
 	.byte	0
 .L318:
@@ -1699,49 +1699,49 @@ Port_RuntimeMode:	.type	object
 	.byte	'Mcal_PortHw_ReadRegister',0,4,20,8
 	.word	282
 	.byte	1,1,1,1,7
-	.byte	'BaseAddress',0,4,21,21
+	.byte	'BaseAddress',0,4,20,49
 	.word	1257
 	.byte	7
-	.byte	'Offset',0,4,22,12
+	.byte	'Offset',0,4,20,69
 	.word	282
 	.byte	0,6
-	.byte	'Mcal_PortHw_WriteRegister',0,4,25,9
+	.byte	'Mcal_PortHw_WriteRegister',0,4,22,9
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'BaseAddress',0,4,26,21
+	.byte	'BaseAddress',0,4,22,51
 	.word	1257
 	.byte	7
-	.byte	'Offset',0,4,27,12
+	.byte	'Offset',0,4,22,70
 	.word	282
 	.byte	7
-	.byte	'Value',0,4,28,12
+	.byte	'Value',0,4,22,85
 	.word	282
 	.byte	0,6
-	.byte	'Mcal_PortHw_WritePinLevel',0,4,31,9
+	.byte	'Mcal_PortHw_WritePinLevel',0,4,24,9
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'PortNumber',0,4,32,11
+	.byte	'PortNumber',0,4,24,41
 	.word	192
 	.byte	7
-	.byte	'PinNumber',0,4,33,11
+	.byte	'PinNumber',0,4,24,59
 	.word	192
 	.byte	7
-	.byte	'LevelHigh',0,4,34,13
+	.byte	'LevelHigh',0,4,24,77
 	.word	192
 	.byte	0,6
 	.byte	'Det_ReportError',0,5,7,14
 	.word	192
 	.byte	1,1,1,1,7
-	.byte	'ModuleId',0,5,8,12
+	.byte	'ModuleId',0,5,7,37
 	.word	649
 	.byte	7
-	.byte	'InstanceId',0,5,9,11
+	.byte	'InstanceId',0,5,7,52
 	.word	192
 	.byte	7
-	.byte	'ApiId',0,5,10,11
+	.byte	'ApiId',0,5,7,69
 	.word	192
 	.byte	7
-	.byte	'ErrorId',0,5,11,11
+	.byte	'ErrorId',0,5,7,81
 	.word	192
 	.byte	0,2
 	.byte	'short int',0,2,5,12
@@ -3225,24 +3225,24 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_Init',0,1,221,3,6,1,1,1
+	.byte	'Port_Init',0,1,183,2,6,1,1,1
 	.word	.L217,.L308,.L216
 	.byte	4
-	.byte	'ConfigPtr',0,1,221,3,39
+	.byte	'ConfigPtr',0,1,183,2,39
 	.word	.L309,.L310
 	.byte	5
 	.word	.L217,.L308
 	.byte	6
-	.byte	'SelectedConfig',0,1,223,3,28
+	.byte	'SelectedConfig',0,1,185,2,28
 	.word	.L309,.L311
 	.byte	6
-	.byte	'PinCfg',0,1,224,3,31
+	.byte	'PinCfg',0,1,186,2,31
 	.word	.L312,.L313
 	.byte	6
-	.byte	'Index',0,1,226,3,12
+	.byte	'Index',0,1,187,2,12
 	.word	.L314,.L315
 	.byte	6
-	.byte	'HardwareMode',0,1,227,3,12
+	.byte	'HardwareMode',0,1,188,2,12
 	.word	.L314,.L316
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_Init')
@@ -3264,9 +3264,9 @@ Port_RuntimeMode:	.type	object
 .L512:
 	.byte	5,6,7,0,5,2
 	.word	.L217
-	.byte	3,220,3,1,5,5,9
+	.byte	3,182,2,1,5,5,9
 	.half	.L457-.L217
-	.byte	3,8,1,5,23,9
+	.byte	3,6,1,5,23,9
 	.half	.L513-.L457
 	.byte	1,5,21,9
 	.half	.L514-.L513
@@ -3278,7 +3278,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L517-.L516
 	.byte	1,5,21,9
 	.half	.L518-.L517
-	.byte	3,2,1,5,48,7,9
+	.byte	3,1,1,5,48,7,9
 	.half	.L519-.L518
 	.byte	1,5,60,9
 	.half	.L520-.L519
@@ -3286,7 +3286,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L136-.L520
 	.byte	1,5,30,9
 	.half	.L137-.L136
-	.byte	3,2,1,5,5,9
+	.byte	3,1,1,5,5,9
 	.half	.L521-.L137
 	.byte	1,5,9,7,9
 	.half	.L139-.L521
@@ -3294,11 +3294,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L522-.L139
 	.byte	3,1,1,5,5,9
 	.half	.L138-.L522
-	.byte	3,3,1,5,20,9
+	.byte	3,2,1,5,20,9
 	.half	.L523-.L138
 	.byte	1,5,16,9
 	.half	.L524-.L523
-	.byte	3,2,1,5,61,9
+	.byte	3,1,1,5,61,9
 	.half	.L459-.L524
 	.byte	1,5,19,9
 	.half	.L142-.L459
@@ -3308,7 +3308,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L526-.L525
 	.byte	1,5,52,9
 	.half	.L460-.L526
-	.byte	3,2,1,5,68,9
+	.byte	3,1,1,5,68,9
 	.half	.L527-.L460
 	.byte	1,5,84,9
 	.half	.L528-.L527
@@ -3322,17 +3322,17 @@ Port_RuntimeMode:	.type	object
 	.half	.L531-.L530
 	.byte	1,5,13,9
 	.half	.L144-.L531
-	.byte	3,2,1,9
+	.byte	3,1,1,9
 	.half	.L532-.L144
 	.byte	3,1,1,5,19,9
 	.half	.L143-.L532
-	.byte	3,3,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L533-.L143
 	.byte	1,5,46,7,9
 	.half	.L534-.L533
 	.byte	3,2,1,5,39,9
 	.half	.L146-.L534
-	.byte	3,3,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L467-.L146
 	.byte	1,5,13,7,9
 	.half	.L535-.L467
@@ -3342,11 +3342,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L537-.L536
 	.byte	1,5,13,9
 	.half	.L148-.L537
-	.byte	3,2,1,9
+	.byte	3,1,1,9
 	.half	.L538-.L148
 	.byte	3,1,1,5,9,9
 	.half	.L147-.L538
-	.byte	3,3,1,5,30,9
+	.byte	3,2,1,5,30,9
 	.half	.L539-.L147
 	.byte	1,5,46,9
 	.half	.L540-.L539
@@ -3362,7 +3362,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L545-.L544
 	.byte	1,5,67,9
 	.half	.L546-.L545
-	.byte	3,102,1,5,38,9
+	.byte	3,108,1,5,38,9
 	.half	.L141-.L546
 	.byte	1,5,52,9
 	.half	.L547-.L141
@@ -3370,7 +3370,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L548-.L547
 	.byte	1,5,5,7,9
 	.half	.L549-.L548
-	.byte	3,29,1,5,23,9
+	.byte	3,22,1,5,23,9
 	.half	.L550-.L549
 	.byte	1,5,21,9
 	.half	.L551-.L550
@@ -3398,24 +3398,24 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_SetPinDirection',0,1,147,4,6,1,1,1
+	.byte	'Port_SetPinDirection',0,1,222,2,6,1,1,1
 	.word	.L219,.L317,.L218
 	.byte	4
-	.byte	'Pin',0,1,147,4,40
+	.byte	'Pin',0,1,222,2,40
 	.word	.L318,.L319
 	.byte	4
-	.byte	'Direction',0,1,147,4,66
+	.byte	'Direction',0,1,222,2,66
 	.word	.L320,.L321
 	.byte	5
 	.word	.L219,.L317
 	.byte	6
-	.byte	'PinCfg',0,1,151,4,31
+	.byte	'PinCfg',0,1,225,2,31
 	.word	.L312,.L322
 	.byte	6
-	.byte	'ConfigIndex',0,1,152,4,12
+	.byte	'ConfigIndex',0,1,226,2,12
 	.word	.L314,.L323
 	.byte	6
-	.byte	'HardwareMode',0,1,153,4,12
+	.byte	'HardwareMode',0,1,227,2,12
 	.word	.L314,.L324
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_SetPinDirection')
@@ -3437,9 +3437,9 @@ Port_RuntimeMode:	.type	object
 .L555:
 	.byte	5,6,7,0,5,2
 	.word	.L219
-	.byte	3,146,4,1,5,9,9
+	.byte	3,221,2,1,5,9,9
 	.half	.L471-.L219
-	.byte	3,8,1,5,5,9
+	.byte	3,6,1,5,5,9
 	.half	.L556-.L471
 	.byte	1,5,9,7,9
 	.half	.L151-.L556
@@ -3447,17 +3447,17 @@ Port_RuntimeMode:	.type	object
 	.half	.L557-.L151
 	.byte	3,1,1,5,40,9
 	.half	.L150-.L557
-	.byte	3,3,1,5,12,9
+	.byte	3,2,1,5,12,9
 	.half	.L472-.L150
 	.byte	1,5,5,9
 	.half	.L474-.L472
-	.byte	3,2,1,5,9,7,9
+	.byte	3,1,1,5,9,7,9
 	.half	.L154-.L474
 	.byte	3,2,1,9
 	.half	.L473-.L154
 	.byte	3,1,1,5,15,9
 	.half	.L153-.L473
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L558-.L153
 	.byte	1,5,9,7,9
 	.half	.L157-.L558
@@ -3465,15 +3465,15 @@ Port_RuntimeMode:	.type	object
 	.half	.L476-.L157
 	.byte	3,1,1,9
 	.half	.L156-.L476
-	.byte	3,3,1,5,20,7,9
+	.byte	3,2,1,5,50,7,9
 	.half	.L559-.L156
-	.byte	3,1,1,5,9,7,9
+	.byte	1,5,9,7,9
 	.half	.L161-.L559
 	.byte	3,2,1,9
 	.half	.L477-.L161
 	.byte	3,1,1,5,26,9
 	.half	.L159-.L477
-	.byte	3,3,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L560-.L159
 	.byte	1,5,25,9
 	.half	.L561-.L560
@@ -3485,7 +3485,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L563-.L164
 	.byte	3,1,1,5,42,9
 	.half	.L163-.L563
-	.byte	3,3,1,5,72,9
+	.byte	3,2,1,5,72,9
 	.half	.L564-.L163
 	.byte	1,5,5,9
 	.half	.L480-.L564
@@ -3495,11 +3495,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L565-.L167
 	.byte	3,1,1,5,5,9
 	.half	.L166-.L565
-	.byte	3,3,1,5,42,7,9
+	.byte	3,2,1,5,42,7,9
 	.half	.L566-.L166
 	.byte	3,2,1,5,35,9
 	.half	.L169-.L566
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L484-.L169
 	.byte	1,5,9,7,9
 	.half	.L171-.L484
@@ -3507,7 +3507,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L567-.L171
 	.byte	3,1,1,5,27,9
 	.half	.L170-.L567
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L568-.L170
 	.byte	1,5,26,9
 	.half	.L569-.L568
@@ -3515,7 +3515,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L570-.L569
 	.byte	1,5,1,9
 	.half	.L152-.L570
-	.byte	3,8,1,7,9
+	.byte	3,5,1,7,9
 	.half	.L239-.L152
 	.byte	0,1,1
 .L553:
@@ -3537,15 +3537,15 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_RefreshPortDirection',0,1,216,4,6,1,1,1
+	.byte	'Port_RefreshPortDirection',0,1,146,3,6,1,1,1
 	.word	.L221,.L325,.L220
 	.byte	4
 	.word	.L221,.L325
 	.byte	5
-	.byte	'Index',0,1,218,4,12
+	.byte	'Index',0,1,148,3,12
 	.word	.L314,.L326
 	.byte	5
-	.byte	'PinCfg',0,1,219,4,31
+	.byte	'PinCfg',0,1,149,3,31
 	.word	.L312,.L327
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_RefreshPortDirection')
@@ -3566,53 +3566,53 @@ Port_RuntimeMode:	.type	object
 .L574:
 	.byte	5,9,7,0,5,2
 	.word	.L221
-	.byte	3,220,4,1,5,5,9
+	.byte	3,149,3,1,5,5,9
 	.half	.L575-.L221
 	.byte	1,5,9,7,9
 	.half	.L174-.L575
 	.byte	3,2,1,9
 	.half	.L576-.L174
-	.byte	3,3,1,5,16,9
+	.byte	3,1,1,5,16,9
 	.half	.L173-.L576
-	.byte	3,3,1,5,49,9
+	.byte	3,2,1,5,61,9
 	.half	.L485-.L173
-	.byte	3,1,1,5,19,9
+	.byte	1,5,19,9
 	.half	.L177-.L485
-	.byte	3,3,1,5,33,9
+	.byte	3,2,1,5,33,9
 	.half	.L577-.L177
 	.byte	1,5,44,9
 	.half	.L578-.L577
 	.byte	1,5,20,9
 	.half	.L486-.L578
-	.byte	3,2,1,5,13,9
+	.byte	3,1,1,5,13,9
 	.half	.L579-.L486
-	.byte	1,5,14,7,9
+	.byte	1,5,59,7,9
 	.half	.L580-.L579
-	.byte	3,1,1,5,30,9
+	.byte	1,5,75,9
 	.half	.L581-.L580
-	.byte	1,5,38,9
+	.byte	1,5,83,9
 	.half	.L582-.L581
-	.byte	1,5,23,7,9
+	.byte	1,5,52,7,9
 	.half	.L583-.L582
-	.byte	3,4,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L488-.L583
-	.byte	3,2,1,5,34,9
+	.byte	3,1,1,5,34,9
 	.half	.L584-.L488
-	.byte	1,5,23,9
+	.byte	1,5,50,9
 	.half	.L585-.L584
-	.byte	3,1,1,5,42,9
+	.byte	1,5,42,9
 	.half	.L586-.L585
-	.byte	3,127,1,5,15,9
+	.byte	1,5,68,9
 	.half	.L178-.L586
-	.byte	3,117,1,5,26,9
+	.byte	3,122,1,5,38,9
 	.half	.L176-.L178
-	.byte	3,127,1,5,40,9
+	.byte	1,5,52,9
 	.half	.L587-.L176
-	.byte	1,5,49,9
+	.byte	1,5,61,9
 	.half	.L588-.L587
 	.byte	1,5,1,7,9
 	.half	.L175-.L588
-	.byte	3,16,1,7,9
+	.byte	3,9,1,7,9
 	.half	.L244-.L175
 	.byte	0,1,1
 .L572:
@@ -3634,10 +3634,10 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_GetVersionInfo',0,1,249,4,6,1,1,1
+	.byte	'Port_GetVersionInfo',0,1,165,3,6,1,1,1
 	.word	.L223,.L328,.L222
 	.byte	4
-	.byte	'versioninfo',0,1,250,4,26
+	.byte	'versioninfo',0,1,165,3,48
 	.word	.L329,.L330
 	.byte	5
 	.word	.L223,.L328
@@ -3660,33 +3660,33 @@ Port_RuntimeMode:	.type	object
 .L592:
 	.byte	5,5,7,0,5,2
 	.word	.L223
-	.byte	3,253,4,1,5,9,7,9
+	.byte	3,167,3,1,5,9,7,9
 	.half	.L181-.L223
 	.byte	3,2,1,9
 	.half	.L489-.L181
-	.byte	3,3,1,9
+	.byte	3,1,1,5,29,9
 	.half	.L180-.L489
-	.byte	3,4,1,5,27,9
+	.byte	3,2,1,5,27,9
 	.half	.L593-.L180
-	.byte	3,127,1,5,9,9
+	.byte	1,5,29,9
 	.half	.L594-.L593
-	.byte	3,4,1,5,27,9
+	.byte	3,1,1,5,27,9
 	.half	.L595-.L594
-	.byte	3,127,1,5,9,9
+	.byte	1,5,37,9
 	.half	.L596-.L595
-	.byte	3,4,1,5,35,9
+	.byte	3,1,1,5,35,9
 	.half	.L597-.L596
-	.byte	3,127,1,5,9,9
+	.byte	1,5,37,9
 	.half	.L598-.L597
-	.byte	3,4,1,5,35,9
+	.byte	3,1,1,5,35,9
 	.half	.L599-.L598
-	.byte	3,127,1,5,9,9
+	.byte	1,5,37,9
 	.half	.L600-.L599
-	.byte	3,4,1,5,35,9
+	.byte	3,1,1,5,35,9
 	.half	.L601-.L600
-	.byte	3,127,1,5,1,9
+	.byte	1,5,1,9
 	.half	.L182-.L601
-	.byte	3,8,1,7,9
+	.byte	3,4,1,7,9
 	.half	.L249-.L182
 	.byte	0,1,1
 .L590:
@@ -3708,24 +3708,24 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_SetPinMode',0,1,157,5,6,1,1,1
+	.byte	'Port_SetPinMode',0,1,182,3,6,1,1,1
 	.word	.L225,.L331,.L224
 	.byte	4
-	.byte	'Pin',0,1,158,5,18
+	.byte	'Pin',0,1,182,3,36
 	.word	.L318,.L332
 	.byte	4
-	.byte	'Mode',0,1,159,5,22
+	.byte	'Mode',0,1,182,3,58
 	.word	.L333,.L334
 	.byte	5
 	.word	.L225,.L331
 	.byte	6
-	.byte	'PinCfg',0,1,163,5,31
+	.byte	'PinCfg',0,1,185,3,31
 	.word	.L312,.L335
 	.byte	6
-	.byte	'ConfigIndex',0,1,164,5,12
+	.byte	'ConfigIndex',0,1,186,3,12
 	.word	.L314,.L336
 	.byte	6
-	.byte	'HardwareMode',0,1,165,5,12
+	.byte	'HardwareMode',0,1,187,3,12
 	.word	.L314,.L337
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_SetPinMode')
@@ -3747,49 +3747,49 @@ Port_RuntimeMode:	.type	object
 .L605:
 	.byte	5,6,7,0,5,2
 	.word	.L225
-	.byte	3,156,5,1,5,9,9
+	.byte	3,181,3,1,5,9,9
 	.half	.L493-.L225
-	.byte	3,10,1,5,5,9
+	.byte	3,6,1,5,5,9
 	.half	.L606-.L493
 	.byte	1,5,9,7,9
 	.half	.L184-.L606
 	.byte	3,2,1,9
 	.half	.L607-.L184
-	.byte	3,3,1,5,40,9
+	.byte	3,1,1,5,40,9
 	.half	.L183-.L607
-	.byte	3,3,1,5,12,9
+	.byte	3,2,1,5,12,9
 	.half	.L494-.L183
 	.byte	1,5,5,9
 	.half	.L496-.L494
-	.byte	3,2,1,5,9,7,9
+	.byte	3,1,1,5,9,7,9
 	.half	.L187-.L496
 	.byte	3,2,1,9
 	.half	.L495-.L187
-	.byte	3,3,1,5,15,9
+	.byte	3,1,1,5,15,9
 	.half	.L186-.L495
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L608-.L186
 	.byte	1,5,9,7,9
 	.half	.L190-.L608
 	.byte	3,2,1,9
 	.half	.L498-.L190
-	.byte	3,3,1,5,35,9
+	.byte	3,1,1,5,72,9
 	.half	.L189-.L498
-	.byte	3,6,1,5,13,9
+	.byte	3,2,1,5,50,9
 	.half	.L609-.L189
-	.byte	1,5,34,9
+	.byte	1,5,71,9
 	.half	.L610-.L609
-	.byte	1,5,14,9
+	.byte	1,5,87,9
 	.half	.L611-.L610
-	.byte	3,1,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L501-.L611
-	.byte	3,124,1,5,9,7,9
+	.byte	1,5,9,7,9
 	.half	.L193-.L501
-	.byte	3,6,1,9
+	.byte	3,2,1,9
 	.half	.L612-.L193
-	.byte	3,3,1,5,35,9
+	.byte	3,1,1,5,35,9
 	.half	.L192-.L612
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L504-.L192
 	.byte	1,5,9,7,9
 	.half	.L196-.L504
@@ -3797,7 +3797,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L613-.L196
 	.byte	3,1,1,5,22,9
 	.half	.L195-.L613
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,5,9
 	.half	.L614-.L195
 	.byte	1,5,21,9
 	.half	.L615-.L614
@@ -3805,7 +3805,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L616-.L615
 	.byte	1,5,1,9
 	.half	.L185-.L616
-	.byte	3,8,1,7,9
+	.byte	3,5,1,7,9
 	.half	.L254-.L185
 	.byte	0,1,1
 .L603:
@@ -3827,12 +3827,12 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lGetIocrOffset',0,1,80,15
+	.byte	'Port_lGetIocrOffset',0,1,49,15
 	.word	.L314
 	.byte	1,1
 	.word	.L199,.L338,.L198
 	.byte	4
-	.byte	'PinNumber',0,1,80,41
+	.byte	'PinNumber',0,1,49,41
 	.word	.L333,.L339
 	.byte	5
 	.word	.L199,.L338
@@ -3855,7 +3855,7 @@ Port_RuntimeMode:	.type	object
 .L620:
 	.byte	5,5,7,0,5,2
 	.word	.L199
-	.byte	3,209,0,1,5,16,7,9
+	.byte	3,50,1,5,16,7,9
 	.half	.L621-.L199
 	.byte	3,2,1,5,9,9
 	.half	.L622-.L621
@@ -3899,20 +3899,20 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lIsIocrRegisterPresent',0,1,101,16
+	.byte	'Port_lIsIocrRegisterPresent',0,1,68,16
 	.word	.L333
 	.byte	1,1
 	.word	.L201,.L340,.L200
 	.byte	4
-	.byte	'PortNumber',0,1,101,50
+	.byte	'PortNumber',0,1,68,50
 	.word	.L333,.L341
 	.byte	4
-	.byte	'PinNumber',0,1,101,68
+	.byte	'PinNumber',0,1,68,68
 	.word	.L333,.L342
 	.byte	5
 	.word	.L201,.L340
 	.byte	6
-	.byte	'Group',0,1,103,11
+	.byte	'Group',0,1,70,11
 	.word	.L333,.L343
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lIsIocrRegisterPresent')
@@ -3934,11 +3934,11 @@ Port_RuntimeMode:	.type	object
 .L631:
 	.byte	5,33,7,0,5,2
 	.word	.L201
-	.byte	3,232,0,1,5,31,9
+	.byte	3,198,0,1,5,31,9
 	.half	.L632-.L201
-	.byte	1,5,14,9
+	.byte	1,5,10,9
 	.half	.L388-.L632
-	.byte	3,4,1,9
+	.byte	3,3,1,9
 	.half	.L633-.L388
 	.byte	3,1,1,9
 	.half	.L634-.L633
@@ -3948,9 +3948,9 @@ Port_RuntimeMode:	.type	object
 	.half	.L636-.L635
 	.byte	3,1,1,9
 	.half	.L637-.L636
-	.byte	3,13,1,9
+	.byte	3,12,1,9
 	.half	.L638-.L637
-	.byte	3,116,1,9
+	.byte	3,117,1,9
 	.half	.L639-.L638
 	.byte	3,1,1,9
 	.half	.L640-.L639
@@ -3958,55 +3958,55 @@ Port_RuntimeMode:	.type	object
 	.half	.L641-.L640
 	.byte	3,1,1,9
 	.half	.L642-.L641
-	.byte	3,13,1,9
+	.byte	3,11,1,9
 	.half	.L643-.L642
-	.byte	3,6,1,9
+	.byte	3,5,1,9
 	.half	.L644-.L643
-	.byte	3,123,1,9
+	.byte	3,124,1,9
 	.half	.L645-.L644
-	.byte	3,115,1,9
+	.byte	3,117,1,9
 	.half	.L646-.L645
 	.byte	3,1,1,9
 	.half	.L647-.L646
-	.byte	3,8,1,9
+	.byte	3,7,1,9
 	.half	.L648-.L647
-	.byte	3,121,1,9
+	.byte	3,122,1,9
 	.half	.L649-.L648
 	.byte	3,1,1,9
 	.half	.L650-.L649
-	.byte	3,11,1,9
+	.byte	3,9,1,9
 	.half	.L651-.L650
-	.byte	3,118,1,9
+	.byte	3,120,1,9
 	.half	.L652-.L651
-	.byte	3,11,1,9
+	.byte	3,9,1,9
 	.half	.L653-.L652
-	.byte	3,118,1,9
+	.byte	3,120,1,9
 	.half	.L654-.L653
-	.byte	3,14,1,5,43,9
+	.byte	3,11,1,5,39,9
 	.half	.L30-.L654
-	.byte	3,115,1,5,40,9
+	.byte	3,118,1,5,36,9
 	.half	.L655-.L30
-	.byte	1,5,13,9
+	.byte	1,5,9,9
 	.half	.L389-.L655
-	.byte	1,5,36,9
+	.byte	1,5,32,9
 	.half	.L24-.L389
-	.byte	3,4,1,5,13,9
+	.byte	3,3,1,5,9,9
 	.half	.L390-.L24
-	.byte	1,5,39,9
+	.byte	1,5,35,9
 	.half	.L29-.L390
-	.byte	3,6,1,5,36,9
+	.byte	3,5,1,5,32,9
 	.half	.L656-.L29
-	.byte	1,5,13,9
+	.byte	1,5,9,9
 	.half	.L391-.L656
-	.byte	1,5,39,9
+	.byte	1,5,35,9
 	.half	.L31-.L391
-	.byte	3,4,1,5,36,9
+	.byte	3,3,1,5,32,9
 	.half	.L657-.L31
-	.byte	1,5,13,9
+	.byte	1,5,9,9
 	.half	.L392-.L657
-	.byte	1,5,20,9
+	.byte	1,5,16,9
 	.half	.L32-.L392
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,9,9
 	.half	.L393-.L32
 	.byte	1,5,1,9
 	.half	.L33-.L393
@@ -4021,7 +4021,7 @@ Port_RuntimeMode:	.type	object
 	.sdecl	'.debug_info',debug,cluster('Port_lResolveHardwareMode')
 	.sect	'.debug_info'
 .L265:
-	.word	381
+	.word	375
 	.half	3
 	.word	.L266
 	.byte	4,1
@@ -4032,26 +4032,26 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lResolveHardwareMode',0,1,147,1,16
+	.byte	'Port_lResolveHardwareMode',0,1,105,16
 	.word	.L333
 	.byte	1,1
 	.word	.L203,.L344,.L202
 	.byte	4
-	.byte	'PinConfigPtr',0,1,147,1,68
+	.byte	'PinConfigPtr',0,1,105,68
 	.word	.L312,.L345
 	.byte	4
-	.byte	'Mode',0,1,147,1,98
+	.byte	'Mode',0,1,105,98
 	.word	.L333,.L346
 	.byte	4
-	.byte	'Direction',0,1,147,1,125
+	.byte	'Direction',0,1,105,125
 	.word	.L320,.L347
 	.byte	4
-	.byte	'HardwareMode',0,1,147,1,143,1
+	.byte	'HardwareMode',0,1,105,143,1
 	.word	.L348,.L349
 	.byte	5
 	.word	.L203,.L344
 	.byte	6
-	.byte	'OutputSelection',0,1,149,1,11
+	.byte	'OutputSelection',0,1,107,11
 	.word	.L333,.L350
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lResolveHardwareMode')
@@ -4073,27 +4073,27 @@ Port_RuntimeMode:	.type	object
 .L661:
 	.byte	5,16,7,0,5,2
 	.word	.L203
-	.byte	3,146,1,1,5,9,9
+	.byte	3,232,0,1,5,9,9
 	.half	.L401-.L203
-	.byte	3,4,1,5,23,7,9
+	.byte	3,3,1,5,52,7,9
 	.half	.L662-.L401
-	.byte	3,1,1,5,16,7,9
+	.byte	1,5,16,7,9
 	.half	.L38-.L662
 	.byte	3,2,1,5,9,9
 	.half	.L663-.L38
-	.byte	1,5,25,9
+	.byte	1,5,46,9
 	.half	.L39-.L663
-	.byte	3,4,1,9
+	.byte	3,2,1,5,72,9
 	.half	.L396-.L39
-	.byte	3,1,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L395-.L396
-	.byte	3,126,1,5,16,7,9
+	.byte	1,5,16,7,9
 	.half	.L664-.L395
-	.byte	3,4,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L665-.L664
 	.byte	1,5,5,9
 	.half	.L41-.L665
-	.byte	3,3,1,5,9,7,9
+	.byte	3,2,1,5,9,7,9
 	.half	.L666-.L41
 	.byte	3,2,1,5,55,7,9
 	.half	.L667-.L666
@@ -4103,53 +4103,53 @@ Port_RuntimeMode:	.type	object
 	.half	.L403-.L668
 	.byte	1,5,9,9
 	.half	.L44-.L403
-	.byte	3,3,1,5,29,7,9
+	.byte	3,2,1,5,56,7,9
 	.half	.L669-.L44
-	.byte	3,3,1,9
+	.byte	3,2,1,5,82,9
 	.half	.L670-.L669
-	.byte	3,1,1,5,17,9
+	.byte	1,5,95,9
 	.half	.L671-.L670
-	.byte	3,1,1,5,29,9
+	.byte	1,5,110,9
 	.half	.L672-.L671
-	.byte	3,1,1,5,17,9
+	.byte	1,5,123,9
 	.half	.L673-.L672
-	.byte	3,1,1,5,13,9
+	.byte	1,5,13,9
 	.half	.L405-.L673
-	.byte	3,123,1,5,16,9
+	.byte	1,5,16,9
 	.half	.L46-.L405
-	.byte	3,8,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L674-.L46
 	.byte	1,9
 	.half	.L43-.L674
-	.byte	3,3,1,5,15,7,9
+	.byte	3,2,1,5,46,7,9
 	.half	.L675-.L43
-	.byte	3,1,1,5,16,7,9
+	.byte	1,5,16,7,9
 	.half	.L49-.L675
 	.byte	3,2,1,5,9,9
 	.half	.L676-.L49
 	.byte	1,5,5,9
 	.half	.L50-.L676
-	.byte	3,3,1,5,16,7,9
+	.byte	3,2,1,5,16,7,9
 	.half	.L677-.L50
 	.byte	3,2,1,5,9,9
 	.half	.L678-.L677
-	.byte	1,5,22,9
+	.byte	1,5,36,9
 	.half	.L52-.L678
-	.byte	3,4,1,5,43,9
+	.byte	3,2,1,5,57,9
 	.half	.L400-.L52
-	.byte	1,5,21,9
+	.byte	1,5,48,9
 	.half	.L406-.L400
-	.byte	3,3,1,9
+	.byte	3,1,1,5,74,9
 	.half	.L679-.L406
-	.byte	3,1,1,9
+	.byte	1,5,116,9
 	.half	.L680-.L679
-	.byte	3,2,1,5,9,9
+	.byte	1,5,130,1,9
 	.half	.L681-.L680
-	.byte	3,1,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L407-.L681
-	.byte	3,123,1,5,1,9
+	.byte	1,5,1,9
 	.half	.L40-.L407
-	.byte	3,6,1,7,9
+	.byte	3,1,1,7,9
 	.half	.L269-.L40
 	.byte	0,1,1
 .L659:
@@ -4171,20 +4171,20 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lFindPinConfig',0,1,206,1,34
+	.byte	'Port_lFindPinConfig',0,1,139,1,34
 	.word	.L312
 	.byte	1,1
 	.word	.L205,.L351,.L204
 	.byte	4
-	.byte	'Pin',0,1,207,1,18
+	.byte	'Pin',0,1,139,1,68
 	.word	.L318,.L352
 	.byte	4
-	.byte	'ConfigIndex',0,1,208,1,13
+	.byte	'ConfigIndex',0,1,139,1,81
 	.word	.L348,.L353
 	.byte	5
 	.word	.L205,.L351
 	.byte	6
-	.byte	'Index',0,1,210,1,12
+	.byte	'Index',0,1,141,1,12
 	.word	.L314,.L354
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lFindPinConfig')
@@ -4206,21 +4206,21 @@ Port_RuntimeMode:	.type	object
 .L685:
 	.byte	5,10,7,0,5,2
 	.word	.L205
-	.byte	3,211,1,1,5,9,9
+	.byte	3,141,1,1,5,9,9
 	.half	.L686-.L205
-	.byte	1,5,22,7,9
+	.byte	1,5,54,7,9
 	.half	.L687-.L686
-	.byte	3,1,1,5,16,7,9
+	.byte	1,5,16,7,9
 	.half	.L55-.L687
 	.byte	3,2,1,5,9,9
 	.half	.L688-.L55
 	.byte	1,5,16,9
 	.half	.L56-.L688
-	.byte	3,3,1,5,49,9
+	.byte	3,2,1,5,61,9
 	.half	.L409-.L56
-	.byte	3,1,1,5,13,9
+	.byte	1,5,13,9
 	.half	.L59-.L409
-	.byte	3,3,1,5,27,9
+	.byte	3,2,1,5,27,9
 	.half	.L689-.L59
 	.byte	1,5,38,9
 	.half	.L690-.L689
@@ -4238,17 +4238,17 @@ Port_RuntimeMode:	.type	object
 	.half	.L696-.L695
 	.byte	1,5,13,9
 	.half	.L697-.L696
-	.byte	1,5,15,9
+	.byte	1,5,68,9
 	.half	.L60-.L697
-	.byte	3,123,1,5,26,9
+	.byte	3,123,1,5,38,9
 	.half	.L58-.L60
-	.byte	3,127,1,5,40,9
+	.byte	1,5,52,9
 	.half	.L698-.L58
-	.byte	1,5,49,9
+	.byte	1,5,61,9
 	.half	.L699-.L698
 	.byte	1,5,12,7,9
 	.half	.L700-.L699
-	.byte	3,10,1,5,5,9
+	.byte	3,8,1,5,5,9
 	.half	.L701-.L700
 	.byte	1,5,1,9
 	.half	.L57-.L701
@@ -4274,18 +4274,18 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lSetPinLevelHw',0,1,233,1,13,1,1
+	.byte	'Port_lSetPinLevelHw',0,1,156,1,13,1,1
 	.word	.L207,.L355,.L206
 	.byte	4
-	.byte	'PinConfigPtr',0,1,234,1,31
+	.byte	'PinConfigPtr',0,1,156,1,60
 	.word	.L312,.L356
 	.byte	4
-	.byte	'Level',0,1,235,1,23
+	.byte	'Level',0,1,156,1,92
 	.word	.L357,.L358
 	.byte	5
 	.word	.L207,.L355
 	.byte	6
-	.byte	'LevelHigh',0,1,237,1,13
+	.byte	'LevelHigh',0,1,158,1,13
 	.word	.L333,.L359
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lSetPinLevelHw')
@@ -4307,11 +4307,11 @@ Port_RuntimeMode:	.type	object
 .L705:
 	.byte	5,5,7,0,5,2
 	.word	.L207
-	.byte	3,238,1,1,5,9,7,9
+	.byte	3,158,1,1,5,9,7,9
 	.half	.L706-.L207
 	.byte	3,2,1,5,5,9
 	.half	.L63-.L706
-	.byte	3,3,1,5,19,7,9
+	.byte	3,2,1,5,19,7,9
 	.half	.L707-.L63
 	.byte	3,2,1,5,25,9
 	.half	.L411-.L707
@@ -4323,13 +4323,13 @@ Port_RuntimeMode:	.type	object
 	.half	.L412-.L708
 	.byte	1,5,9,9
 	.half	.L67-.L412
-	.byte	3,4,1,5,21,9
+	.byte	3,4,1,5,50,9
 	.half	.L66-.L67
-	.byte	3,4,1,9
+	.byte	3,2,1,5,76,9
 	.half	.L410-.L66
-	.byte	3,1,1,5,9,9
+	.byte	1,5,89,9
 	.half	.L709-.L410
-	.byte	3,1,1,5,1,9
+	.byte	1,5,1,9
 	.half	.L64-.L709
 	.byte	3,1,1,7,9
 	.half	.L279-.L64
@@ -4353,32 +4353,32 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lSetPinModeHw',0,1,136,2,16
+	.byte	'Port_lSetPinModeHw',0,1,177,1,16
 	.word	.L333
 	.byte	1,1
 	.word	.L209,.L360,.L208
 	.byte	4
-	.byte	'PinConfigPtr',0,1,137,2,31
+	.byte	'PinConfigPtr',0,1,177,1,62
 	.word	.L312,.L361
 	.byte	4
-	.byte	'HardwareMode',0,1,138,2,12
+	.byte	'HardwareMode',0,1,177,1,83
 	.word	.L314,.L362
 	.byte	5
 	.word	.L209,.L360
 	.byte	6
-	.byte	'Base',0,1,140,2,21
+	.byte	'Base',0,1,179,1,21
 	.word	.L363,.L364
 	.byte	6
-	.byte	'IocrOffset',0,1,141,2,12
+	.byte	'IocrOffset',0,1,180,1,12
 	.word	.L314,.L365
 	.byte	6
-	.byte	'Shift',0,1,142,2,12
+	.byte	'Shift',0,1,181,1,12
 	.word	.L314,.L366
 	.byte	6
-	.byte	'Mask',0,1,143,2,12
+	.byte	'Mask',0,1,182,1,12
 	.word	.L314,.L367
 	.byte	6
-	.byte	'RegisterValue',0,1,144,2,12
+	.byte	'RegisterValue',0,1,183,1,12
 	.word	.L314,.L368
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lSetPinModeHw')
@@ -4400,15 +4400,15 @@ Port_RuntimeMode:	.type	object
 .L713:
 	.byte	5,16,7,0,5,2
 	.word	.L209
-	.byte	3,135,2,1,5,5,9
+	.byte	3,176,1,1,5,5,9
 	.half	.L416-.L209
-	.byte	3,10,1,5,16,7,9
+	.byte	3,7,1,5,16,7,9
 	.half	.L714-.L416
 	.byte	3,2,1,5,9,9
 	.half	.L715-.L714
 	.byte	1,5,21,9
 	.half	.L70-.L715
-	.byte	3,3,1,5,35,9
+	.byte	3,2,1,5,35,9
 	.half	.L716-.L70
 	.byte	1,5,5,9
 	.half	.L717-.L716
@@ -4416,61 +4416,61 @@ Port_RuntimeMode:	.type	object
 	.half	.L718-.L717
 	.byte	3,2,1,5,9,9
 	.half	.L719-.L718
-	.byte	1,5,21,9
+	.byte	1,5,52,9
 	.half	.L72-.L719
-	.byte	3,4,1,5,10,9
+	.byte	3,2,1,5,10,9
 	.half	.L414-.L72
-	.byte	3,127,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L418-.L414
-	.byte	3,3,1,5,16,7,9
+	.byte	3,1,1,5,16,7,9
 	.half	.L720-.L418
 	.byte	3,2,1,5,9,9
 	.half	.L721-.L720
-	.byte	1,5,25,9
+	.byte	1,5,50,9
 	.half	.L74-.L721
-	.byte	3,4,1,9
+	.byte	3,2,1,5,76,9
 	.half	.L722-.L74
-	.byte	3,1,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L417-.L722
-	.byte	3,126,1,5,16,7,9
+	.byte	1,5,16,7,9
 	.half	.L723-.L417
-	.byte	3,4,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L724-.L723
-	.byte	1,5,21,9
+	.byte	1,5,51,9
 	.half	.L76-.L724
-	.byte	3,4,1,5,16,9
+	.byte	3,2,1,5,16,9
 	.half	.L419-.L76
-	.byte	3,127,1,5,31,9
+	.byte	1,5,35,9
 	.half	.L421-.L419
-	.byte	3,4,1,5,45,9
+	.byte	3,1,1,5,49,9
 	.half	.L725-.L421
-	.byte	1,5,43,9
+	.byte	1,5,47,9
 	.half	.L726-.L725
-	.byte	1,5,49,9
+	.byte	1,5,53,9
 	.half	.L727-.L726
-	.byte	1,5,32,9
+	.byte	1,5,77,9
 	.half	.L422-.L727
-	.byte	3,1,1,5,13,9
+	.byte	1,5,13,9
 	.half	.L728-.L422
-	.byte	3,3,1,5,39,9
+	.byte	3,1,1,5,39,9
 	.half	.L729-.L728
-	.byte	1,5,9,9
+	.byte	1,5,53,9
 	.half	.L423-.L729
-	.byte	3,4,1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L426-.L423
-	.byte	3,2,1,5,19,9
+	.byte	3,1,1,5,19,9
 	.half	.L424-.L426
-	.byte	1,5,24,9
+	.byte	1,5,37,9
 	.half	.L730-.L424
-	.byte	3,3,1,5,53,9
+	.byte	3,1,1,5,66,9
 	.half	.L731-.L730
 	.byte	1,5,19,9
 	.half	.L732-.L731
-	.byte	3,127,1,5,9,9
+	.byte	1,5,50,9
 	.half	.L427-.L732
-	.byte	3,6,1,5,12,9
+	.byte	3,1,1,5,12,9
 	.half	.L428-.L427
-	.byte	3,2,1,5,5,9
+	.byte	3,1,1,5,5,9
 	.half	.L733-.L428
 	.byte	1,5,1,9
 	.half	.L71-.L733
@@ -4496,18 +4496,18 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lSetPinDirectionHw',0,1,199,2,13,1,1
+	.byte	'Port_lSetPinDirectionHw',0,1,210,1,13,1,1
 	.word	.L211,.L369,.L210
 	.byte	4
-	.byte	'PinConfigPtr',0,1,200,2,31
+	.byte	'PinConfigPtr',0,1,210,1,64
 	.word	.L312,.L370
 	.byte	4
-	.byte	'Direction',0,1,201,2,27
+	.byte	'Direction',0,1,210,1,100
 	.word	.L320,.L371
 	.byte	5
 	.word	.L211,.L369
 	.byte	6
-	.byte	'HardwareMode',0,1,203,2,12
+	.byte	'HardwareMode',0,1,212,1,12
 	.word	.L314,.L372
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lSetPinDirectionHw')
@@ -4529,15 +4529,15 @@ Port_RuntimeMode:	.type	object
 .L737:
 	.byte	5,13,7,0,5,2
 	.word	.L211
-	.byte	3,198,2,1,9
+	.byte	3,209,1,1,5,50,9
 	.half	.L435-.L211
-	.byte	3,8,1,5,14,9
+	.byte	3,3,1,5,82,9
 	.half	.L432-.L435
-	.byte	3,2,1,5,5,9
+	.byte	1,5,5,9
 	.half	.L433-.L432
-	.byte	3,124,1,5,13,7,9
+	.byte	1,5,49,7,9
 	.half	.L738-.L433
-	.byte	3,8,1,5,1,9
+	.byte	3,2,1,5,1,9
 	.half	.L79-.L738
 	.byte	3,2,1,7,9
 	.half	.L289-.L79
@@ -4561,26 +4561,26 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lValidateModeMap',0,1,218,2,16
+	.byte	'Port_lValidateModeMap',0,1,218,1,16
 	.word	.L333
 	.byte	1,1
 	.word	.L213,.L373,.L212
 	.byte	4
-	.byte	'PinCfg',0,1,219,2,31
+	.byte	'PinCfg',0,1,218,1,65
 	.word	.L312,.L374
 	.byte	5
 	.word	.L213,.L373
 	.byte	6
-	.byte	'Index',0,1,221,2,11
+	.byte	'Index',0,1,220,1,11
 	.word	.L333,.L375
 	.byte	6
-	.byte	'OtherIndex',0,1,222,2,11
+	.byte	'OtherIndex',0,1,221,1,11
 	.word	.L333,.L376
 	.byte	6
-	.byte	'Mode',0,1,223,2,11
+	.byte	'Mode',0,1,222,1,11
 	.word	.L333,.L377
 	.byte	6
-	.byte	'PcValue',0,1,224,2,11
+	.byte	'PcValue',0,1,223,1,11
 	.word	.L333,.L378
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lValidateModeMap')
@@ -4602,25 +4602,25 @@ Port_RuntimeMode:	.type	object
 .L742:
 	.byte	5,5,7,0,5,2
 	.word	.L213
-	.byte	3,225,2,1,5,16,7,9
+	.byte	3,223,1,1,5,16,7,9
 	.half	.L743-.L213
 	.byte	3,2,1,5,9,9
 	.half	.L744-.L743
 	.byte	1,5,17,9
 	.half	.L80-.L744
-	.byte	3,3,1,5,10,9
+	.byte	3,2,1,5,10,9
 	.half	.L745-.L80
-	.byte	1,5,17,7,9
+	.byte	1,5,53,7,9
 	.half	.L746-.L745
-	.byte	3,1,1,5,27,9
+	.byte	1,5,63,9
 	.half	.L747-.L746
-	.byte	1,5,17,7,9
+	.byte	1,5,88,7,9
 	.half	.L82-.L747
-	.byte	3,1,1,5,10,9
+	.byte	1,5,81,9
 	.half	.L748-.L82
-	.byte	1,5,17,7,9
+	.byte	1,5,125,7,9
 	.half	.L749-.L748
-	.byte	3,1,1,5,27,9
+	.byte	1,5,135,1,9
 	.half	.L750-.L749
 	.byte	1,5,16,7,9
 	.half	.L83-.L750
@@ -4628,11 +4628,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L751-.L83
 	.byte	1,5,16,9
 	.half	.L84-.L751
-	.byte	3,3,1,5,43,9
+	.byte	3,2,1,5,55,9
 	.half	.L437-.L84
-	.byte	3,1,1,5,31,9
+	.byte	1,5,31,9
 	.half	.L88-.L437
-	.byte	3,3,1,5,22,9
+	.byte	3,2,1,5,22,9
 	.half	.L752-.L88
 	.byte	1,5,31,9
 	.half	.L753-.L752
@@ -4648,19 +4648,19 @@ Port_RuntimeMode:	.type	object
 	.half	.L757-.L756
 	.byte	1,5,13,9
 	.half	.L440-.L757
-	.byte	3,2,1,5,19,7,9
+	.byte	3,1,1,5,50,7,9
 	.half	.L758-.L440
-	.byte	3,1,1,5,20,7,9
+	.byte	1,5,20,7,9
 	.half	.L89-.L758
 	.byte	3,2,1,5,13,9
 	.half	.L441-.L89
 	.byte	1,5,24,9
 	.half	.L90-.L441
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L759-.L90
-	.byte	1,5,24,7,9
+	.byte	1,5,57,7,9
 	.half	.L760-.L759
-	.byte	3,1,1,5,22,9
+	.byte	1,5,55,9
 	.half	.L761-.L760
 	.byte	1,5,20,7,9
 	.half	.L92-.L761
@@ -4668,7 +4668,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L442-.L92
 	.byte	1,5,38,9
 	.half	.L93-.L442
-	.byte	3,3,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L762-.L93
 	.byte	1,5,20,7,9
 	.half	.L763-.L762
@@ -4676,11 +4676,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L443-.L763
 	.byte	1,5,25,9
 	.half	.L95-.L443
-	.byte	3,3,1,5,32,9
+	.byte	3,2,1,5,49,9
 	.half	.L444-.L95
-	.byte	3,1,1,9
+	.byte	1,5,32,9
 	.half	.L98-.L444
-	.byte	3,3,1,5,23,9
+	.byte	3,2,1,5,23,9
 	.half	.L764-.L98
 	.byte	1,5,32,9
 	.half	.L765-.L764
@@ -4692,19 +4692,19 @@ Port_RuntimeMode:	.type	object
 	.half	.L768-.L767
 	.byte	3,2,1,5,17,9
 	.half	.L445-.L768
-	.byte	1,5,24,9
+	.byte	1,5,61,9
 	.half	.L99-.L445
-	.byte	3,124,1,5,32,9
+	.byte	3,124,1,5,49,9
 	.half	.L97-.L99
-	.byte	3,127,1,5,15,7,9
+	.byte	1,5,62,7,9
 	.half	.L769-.L97
-	.byte	3,105,1,5,24,9
+	.byte	3,112,1,5,36,9
 	.half	.L87-.L769
-	.byte	3,127,1,5,43,9
+	.byte	1,5,55,9
 	.half	.L770-.L87
 	.byte	1,5,12,7,9
 	.half	.L771-.L770
-	.byte	3,34,1,5,5,9
+	.byte	3,24,1,5,5,9
 	.half	.L772-.L771
 	.byte	1,5,1,9
 	.half	.L81-.L772
@@ -4730,29 +4730,29 @@ Port_RuntimeMode:	.type	object
 	.byte	2
 	.word	.L226
 	.byte	3
-	.byte	'Port_lValidateConfig',0,1,150,3,16
+	.byte	'Port_lValidateConfig',0,1,130,2,16
 	.word	.L333
 	.byte	1,1
 	.word	.L215,.L379,.L214
 	.byte	4
-	.byte	'ConfigPtr',0,1,151,3,28
+	.byte	'ConfigPtr',0,1,130,2,61
 	.word	.L309,.L380
 	.byte	5
 	.word	.L215,.L379
 	.byte	6
-	.byte	'Index',0,1,153,3,12
+	.byte	'Index',0,1,132,2,12
 	.word	.L314,.L381
 	.byte	6
-	.byte	'OtherIndex',0,1,154,3,12
+	.byte	'OtherIndex',0,1,133,2,12
 	.word	.L314,.L382
 	.byte	6
-	.byte	'HardwareMode',0,1,155,3,12
+	.byte	'HardwareMode',0,1,134,2,12
 	.word	.L314,.L383
 	.byte	6
-	.byte	'PinCfg',0,1,157,3,31
+	.byte	'PinCfg',0,1,135,2,31
 	.word	.L312,.L384
 	.byte	6
-	.byte	'Previous',0,1,158,3,31
+	.byte	'Previous',0,1,136,2,31
 	.word	.L312,.L385
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Port_lValidateConfig')
@@ -4774,9 +4774,9 @@ Port_RuntimeMode:	.type	object
 .L776:
 	.byte	5,16,7,0,5,2
 	.word	.L215
-	.byte	3,149,3,1,5,9,9
+	.byte	3,129,2,1,5,9,9
 	.half	.L448-.L215
-	.byte	3,10,1,5,45,7,9
+	.byte	3,7,1,5,45,7,9
 	.half	.L777-.L448
 	.byte	1,5,55,9
 	.half	.L778-.L777
@@ -4784,9 +4784,9 @@ Port_RuntimeMode:	.type	object
 	.half	.L779-.L778
 	.byte	1,5,84,9
 	.half	.L780-.L779
-	.byte	1,5,19,7,9
+	.byte	1,5,125,7,9
 	.half	.L781-.L780
-	.byte	3,1,1,5,31,9
+	.byte	1,5,137,1,9
 	.half	.L782-.L781
 	.byte	1,5,16,7,9
 	.half	.L102-.L782
@@ -4794,7 +4794,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L783-.L102
 	.byte	1,5,16,9
 	.half	.L105-.L783
-	.byte	3,3,1,5,56,9
+	.byte	3,2,1,5,56,9
 	.half	.L449-.L105
 	.byte	1,5,28,9
 	.half	.L108-.L449
@@ -4802,7 +4802,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L784-.L108
 	.byte	1,5,47,9
 	.half	.L450-.L784
-	.byte	3,2,1,5,13,9
+	.byte	3,1,1,5,13,9
 	.half	.L785-.L450
 	.byte	1,5,83,7,9
 	.half	.L786-.L785
@@ -4810,11 +4810,11 @@ Port_RuntimeMode:	.type	object
 	.half	.L787-.L786
 	.byte	1,5,95,9
 	.half	.L788-.L787
-	.byte	1,5,49,7,9
+	.byte	1,5,141,1,7,9
 	.half	.L789-.L788
-	.byte	3,1,1,5,68,9
+	.byte	1,5,160,1,9
 	.half	.L790-.L789
-	.byte	1,5,81,9
+	.byte	1,5,173,1,9
 	.half	.L791-.L790
 	.byte	1,5,20,7,9
 	.half	.L109-.L791
@@ -4822,7 +4822,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L792-.L109
 	.byte	1,5,20,9
 	.half	.L111-.L792
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L793-.L111
 	.byte	1,5,64,7,9
 	.half	.L794-.L793
@@ -4834,7 +4834,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L797-.L796
 	.byte	1,5,20,9
 	.half	.L113-.L797
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L798-.L113
 	.byte	1,5,61,7,9
 	.half	.L799-.L798
@@ -4846,7 +4846,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L802-.L801
 	.byte	1,5,20,9
 	.half	.L116-.L802
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L803-.L116
 	.byte	1,5,64,7,9
 	.half	.L804-.L803
@@ -4858,7 +4858,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L807-.L806
 	.byte	1,5,20,9
 	.half	.L119-.L807
-	.byte	3,3,1,5,13,9
+	.byte	3,2,1,5,13,9
 	.half	.L808-.L119
 	.byte	1,5,60,7,9
 	.half	.L809-.L808
@@ -4870,7 +4870,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L812-.L811
 	.byte	1,5,35,9
 	.half	.L122-.L812
-	.byte	3,3,1,5,9,9
+	.byte	3,2,1,5,9,9
 	.half	.L452-.L122
 	.byte	1,5,20,7,9
 	.half	.L813-.L452
@@ -4878,7 +4878,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L814-.L813
 	.byte	1,5,52,9
 	.half	.L125-.L814
-	.byte	3,3,1,5,68,9
+	.byte	3,2,1,5,68,9
 	.half	.L815-.L125
 	.byte	1,5,84,9
 	.half	.L816-.L815
@@ -4890,7 +4890,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L818-.L817
 	.byte	1,5,25,9
 	.half	.L127-.L818
-	.byte	3,3,1,5,48,9
+	.byte	3,2,1,5,48,9
 	.half	.L455-.L127
 	.byte	1,5,34,9
 	.half	.L130-.L455
@@ -4898,7 +4898,7 @@ Port_RuntimeMode:	.type	object
 	.half	.L819-.L130
 	.byte	1,5,26,9
 	.half	.L456-.L819
-	.byte	3,2,1,5,43,9
+	.byte	3,1,1,5,43,9
 	.half	.L820-.L456
 	.byte	1,5,17,9
 	.half	.L821-.L820
@@ -4920,17 +4920,17 @@ Port_RuntimeMode:	.type	object
 	.half	.L828-.L131
 	.byte	1,5,59,9
 	.half	.L132-.L828
-	.byte	3,122,1,5,48,9
+	.byte	3,123,1,5,48,9
 	.half	.L129-.L132
 	.byte	1,5,62,7,9
 	.half	.L829-.L129
-	.byte	3,88,1,5,47,9
+	.byte	3,97,1,5,47,9
 	.half	.L107-.L829
 	.byte	1,5,56,9
 	.half	.L830-.L107
 	.byte	1,5,12,7,9
 	.half	.L831-.L830
-	.byte	3,51,1,5,5,9
+	.byte	3,40,1,5,5,9
 	.half	.L832-.L831
 	.byte	1,5,1,9
 	.half	.L106-.L832
@@ -4954,7 +4954,7 @@ Port_RuntimeMode:	.type	object
 	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L226
 	.byte	3
-	.byte	'Port_InitStatus',0,6,69,16
+	.byte	'Port_InitStatus',0,6,45,16
 	.word	.L333
 	.byte	5,3
 	.word	Port_InitStatus
@@ -4975,7 +4975,7 @@ Port_RuntimeMode:	.type	object
 	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L226
 	.byte	3
-	.byte	'Port_ConfigPtr',0,6,71,31
+	.byte	'Port_ConfigPtr',0,6,46,31
 	.word	.L309
 	.byte	5,3
 	.word	Port_ConfigPtr
@@ -4996,7 +4996,7 @@ Port_RuntimeMode:	.type	object
 	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L226
 	.byte	3
-	.byte	'Port_RuntimeDirection',0,6,74,5
+	.byte	'Port_RuntimeDirection',0,6,47,30
 	.word	.L386
 	.byte	5,3
 	.word	Port_RuntimeDirection
@@ -5017,7 +5017,7 @@ Port_RuntimeMode:	.type	object
 	.byte	'C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L226
 	.byte	3
-	.byte	'Port_RuntimeMode',0,6,77,5
+	.byte	'Port_RuntimeMode',0,6,48,25
 	.word	.L387
 	.byte	5,3
 	.word	Port_RuntimeMode
