@@ -20,27 +20,27 @@
 #define MCU_GETVERSIONINFO_ID 0x09
 #define MCU_GETRAMSTATE_ID 0x0a
 
+#define Mcu_ClockType unsigned int
 
-
-struct Mcu_ConfigType
+typedef struct
 {
 
-};
+}Mcu_ConfigType;
 
-enum Mcu_PllStatusType
+typedef enum
 {
   PLL_LOCKED,
   PLL_UNLOCKED,
   PLL_STATUS_UNDEFINED
-};
+}Mcu_PllStatusType;
 
-enum Mcu_ResetType
+typedef enum
 {
     POWER_ON_RESET,
     WATCHDOG_RESET,
     SW_RESET,
     RESET_UNDEFINED
-};
+}Mcu_ResetType;
 
 
 void Mcu_Init(const Mcu_ConfigType* ConfigPtr);

@@ -10,27 +10,27 @@
 #endif
 
 static boolean Gpt_Init_Status =FALSE;
-//static boolean Running= FALSE;
-//static boolean Stopped= FALSE;
+static boolean Running= FALSE;
+static boolean Stopped= FALSE;
 //static boolean Expired= FALSE;
 
 static boolean Validate_Config(const Gpt_ConfigType* SelectedConfig);
 
 static boolean Enable_Module(void)
 {
-   CLC&=~(1U<<0U);
-   if((CLC&(1U<<1U) )== 0U)
+   CLC&=~(1U<<DISR);
+   if((CLC&(1U<<DISS) )== 0U)
        return TRUE;
   return FALSE;
 }
 
 static void Check_Status(volatile unsigned int *REGISTER)
 {
-    if(*REGISTER &(1U<<6)==0U){
+    if(*REGISTER &(1U<<T2R)==0U){
           GPT_REPORT_ERROR(GPT_STARTTIMER_ID ,GPT_E_BUSY);
     }else{
-       *REGISTER|= (1U<<6);
-       // Running =TRUE;
+       *REGISTER|= (1U<<T2R);
+       Running =TRUE;
     }
 }
 
@@ -84,7 +84,7 @@ void Gpt_Init(const Gpt_ConfigType* ConfigPtr)
     const Gpt_ConfigType *SelectedConfig;
     const Gpt_ChannelConfigType *Channel_cfg;
 
-    SelectedConfig =(ConfigPtr == NULL_PTR) ? &Gpt_Config : ConfigPtr;
+    SelectedConfig = ConfigPtr;
 
     if(Validate_Config(SelectedConfig)==FALSE)
     {
@@ -195,8 +195,16 @@ void Gpt_EnableNotification(Gpt_ChannelType Channel)
             GPT_REPORT_ERROR(GPT_ENABLENOTIFICATION_ID ,GPT_E_PARAM_CHANNEL);
             return;
     }
+    const Gpt_ConfigType *SelectedConfig =&Gpt_Config;
+    const Gpt_ChannelConfigType *Channel_cfg = NULL_PTR;
+
+    for(uint32 index=0;index<SelectedConfig->NumberOfChannels;index++)
+     {
+           Channel_cfg= &SelectedConfig->ChannelConfigPtr[index];
+     }
 
 }
+
 void Gpt_DisableNotification(Gpt_ChannelType Channel)
 {
     if( Gpt_Init_Status!=TRUE)
@@ -211,24 +219,78 @@ void Gpt_DisableNotification(Gpt_ChannelType Channel)
     }
 
 }
+
+void Gpt_EnableWakeup(Gpt_ChannelType Channel)
+{
+    if( Gpt_Init_Status!=TRUE)
+    {
+          GPT_REPORT_ERROR(GPT_ENABLEWAKEUP_ID , GPT_E_UNINIT);
+          return;
+    }
+    if(Channel>4)
+    {
+        GPT_REPORT_ERROR(GPT_ENABLEWAKEUP_ID , GPT_E_PARAM_CHANNEL);
+          return;
+    }
+    const Gpt_ConfigType *SelectedConfig=&Gpt_Config;
+    const Gpt_ChannelConfigType *Channel_Config=NULL_PTR;
+      for(uint32 index=0;index<SelectedConfig->NumberOfChannels;index++)
+      {
+          Channel_Config= &SelectedConfig->ChannelConfigPtr[index];
+          if(Channel_Config->GptChannelId == Channel && Channel_Config->EnableWakeup == TRUE)
+          {
+
+          }
+      }
+}
+
 void Gpt_SetMode(Gpt_ModeType Mode)
 {
     if( Gpt_Init_Status!=TRUE)
     {
+        GPT_REPORT_ERROR(GPT_SETMODE_ID,  GPT_E_PARAM_MODE);
         return;
+    }
+
+    if(Mode != SLEEP_MODE && Mode != NORMAL_MODE)
+    {
+        GPT_REPORT_ERROR(GPT_SETMODE_ID,  GPT_E_PARAM_MODE);
     }
     const Gpt_ConfigType *SelectedConfig=&Gpt_Config;
     const Gpt_ChannelConfigType *Channel_Config=NULL_PTR;
     for(uint32 index=0;index<SelectedConfig->NumberOfChannels;index++)
     {
          Channel_Config= &SelectedConfig->ChannelConfigPtr[index];
-       if(Mode == NORMAL_MODE )
-       {
+         if( Channel_Config->EnableWakeup == FALSE )  //enable ch
+         {
+             continue;
+         }else
+         {
+             Gpt_StartTimer(Channel_Config->GptChannelId,Channel_Config->TickValueMax);  //what value
+             Gpt_EnableWakeup(Channel_Config->GptChannelId); //which timer channel
+         }
 
-       }else
-       {
+         if(Mode == SLEEP_MODE )
+         {
 
-       }
+              CLC&=~(1U<<EDIS);
+              if(Channel_Config->EnableWakeup == FALSE &&  Running==TRUE)
+              {
+                  Running = FALSE;  //Timerchannel should be stopped
+                  Stopped = TRUE;  //TCON appropriated timer should be stopped
+              }
+         }else
+         {
+               //check if driver is in sleep mode
+               /*if()
+               {
+
+               }*/
+               if(Channel_Config->GptNotification!=NULL_PTR)
+               {
+                   Gpt_EnableNotification(Channel_Config->GptChannelId); //which timer channel
+               }
+         }
     }
 }
 
@@ -256,4 +318,19 @@ Gpt_ValueType Gpt_GetTimeElapsed(Gpt_ChannelType Channel)
            }
        }
        return 1;
+}
+
+
+Gpt_ValueType Gpt_GetTimeRemaining(Gpt_ChannelType Channel)
+{
+    if( Gpt_Init_Status!=TRUE)
+    {
+       GPT_REPORT_ERROR(GPT_GETTIMEREMAINING_ID   , GPT_E_UNINIT);
+       return 0;
+    }
+    if(Channel>4)
+    {
+       GPT_REPORT_ERROR(GPT_GETTIMEREMAINING_ID   , GPT_E_PARAM_CHANNEL);
+       return 0;
+    }
 }

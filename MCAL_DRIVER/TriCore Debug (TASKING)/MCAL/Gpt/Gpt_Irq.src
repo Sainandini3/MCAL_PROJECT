@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc20032a --dep-file=MCAL/Gpt/Gpt_Irq.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc39xb -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Configurations -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Includes -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Det -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Dio -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Gpt -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Ocu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCU -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o MCAL/Gpt/Gpt_Irq.src ../MCAL/Gpt/Gpt_Irq.c"
+	.compiler_invocation	"ctc -f cc13140a --dep-file=MCAL/Gpt/Gpt_Irq.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc39xb -D__CPU_TC39XB__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc39xb -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Configurations -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Includes -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Sfr\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC39xB -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Det -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Dio -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Gpt -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Ocu -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCAL\\\\Port -IC:\\\\Users\\\\Admin\\\\AURIX-v1.10.36-workspace\\\\MCAL_DRIVER\\\\MCU -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o MCAL/Gpt/Gpt_Irq.src ../MCAL/Gpt/Gpt_Irq.c"
 	.compiler_name		"ctc"
 	;source	'../MCAL/Gpt/Gpt_Irq.c'
 
@@ -10,7 +10,7 @@ $TC162
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	1146
+	.word	1117
 	.half	3
 	.word	.L4
 	.byte	4
@@ -56,37 +56,37 @@ $TC162
 	.byte	'unsigned long long int',0,8,7,3
 	.byte	'uint64',0,2,121,29
 	.word	430
-	.byte	6,3,52,9,1,7
+	.byte	6,3,59,9,1,7
 	.byte	'GPT_CH_MODE_CONTINUOUS',0,0,7
 	.byte	'GPT_CH_MODE_ONESHOT',0,1,0,3
-	.byte	'GptChannelMode',0,3,57,2
+	.byte	'GptChannelMode',0,3,64,2
 	.word	471
-	.byte	6,3,59,9,1,7
+	.byte	6,3,66,9,1,7
 	.byte	'GPT_HW_GPT12_T2',0,0,7
 	.byte	'GPT_HW_GPT12_T3',0,1,7
 	.byte	'GPT_HW_GPT12_T4',0,2,7
 	.byte	'GPT_HW_GPT12_T5',0,3,7
 	.byte	'GPT_HW_GPT12_T6',0,4,0,3
-	.byte	'Gpt_HwChannelType',0,3,66,2
+	.byte	'Gpt_HwChannelType',0,3,73,2
 	.word	547
 	.byte	3
-	.byte	'GptChannelId',0,3,70,16
+	.byte	'GptChannelId',0,3,77,16
 	.word	394
-	.byte	6,3,72,9,1,7
+	.byte	6,3,79,9,1,7
 	.byte	'GPT_T3_INPUT_NONE',0,0,7
 	.byte	'GPT_T3_INPUT_A',0,1,7
 	.byte	'GPT_T3_INPUT_B',0,2,0,3
-	.byte	'Gpt_T3InputType',0,3,77,3
+	.byte	'Gpt_T3InputType',0,3,84,3
 	.word	690
-	.byte	6,3,79,9,1,7
+	.byte	6,3,86,9,1,7
 	.byte	'GPT_T3_OUTPUT_NONE',0,0,7
 	.byte	'GPT_T3_OUTPUT_P10_6',0,1,7
 	.byte	'GPT_T3_OUTPUT_P21_6',0,2,0,3
-	.byte	'Gpt_T3OutputType',0,3,84,3
+	.byte	'Gpt_T3OutputType',0,3,91,3
 	.word	774
 	.byte	8,1,1,5
 	.word	870
-	.byte	9,3,90,9,28,10
+	.byte	9,3,97,9,24,10
 	.byte	'GptChannelId',0
 	.word	394
 	.byte	4,2,35,0,10
@@ -113,11 +113,8 @@ $TC162
 	.byte	1,2,35,16,10
 	.byte	'GptNotification',0
 	.word	873
-	.byte	4,2,35,20,10
-	.byte	'NotificationEnabled',0
-	.word	310
-	.byte	1,2,35,24,0,3
-	.byte	'Gpt_ChannelConfigType',0,3,103,2
+	.byte	4,2,35,20,0,3
+	.byte	'Gpt_ChannelConfigType',0,3,109,2
 	.word	878
 	.byte	0
 	.sdecl	'.debug_abbrev',debug

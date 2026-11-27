@@ -13,12 +13,13 @@ static const Gpt_ChannelConfigType Gpt_ChannelConfig[] =
         .OutputSelection = GPT_T3_OUTPUT_NONE,
         .EnableWakeup = FALSE,
         .GptNotification = NULL_PTR,
-        .NotificationEnabled = FALSE
     }
 };
+
 
 const Gpt_ConfigType Gpt_Config =
 {
     .ChannelConfigPtr = Gpt_ChannelConfig,
     .NumberOfChannels = (uint8)(sizeof(Gpt_ChannelConfig)/sizeof(Gpt_ChannelConfig[0]))
 };
+

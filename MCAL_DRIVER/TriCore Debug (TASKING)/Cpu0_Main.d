@@ -120,5 +120,19 @@ Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Dio\
 "C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Dio\Dio_Cfg.h" :
 Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h"
 "C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Ecu.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Ecu.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt.h" :
+Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h"
+"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\MCAL\Gpt\Gpt_Cfg.h" :
 Cpu0_Main.o :	"C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h"
 "C:\\Users\\Admin\\AURIX-v1.10.36-workspace\\MCAL_DRIVER\Includes\Std_Types.h" :

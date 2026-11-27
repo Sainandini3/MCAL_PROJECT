@@ -7,7 +7,8 @@
 
 #include <MCAL/Dio/Dio.h>
 #include <MCAL/Dio/Dio_Cfg.h>
-
+#include <MCAL/Gpt/Gpt.h>
+#include<MCAL/Gpt/Gpt_Cfg.h>
 #include <Includes/Std_Types.h>
 
 IFX_ALIGN(4) IfxCpu_syncEvent cpuSyncEvent = 0;

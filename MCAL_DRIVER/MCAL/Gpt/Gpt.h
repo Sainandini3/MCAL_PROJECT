@@ -30,6 +30,7 @@
 #define GPT_ENABLENOTIFICATION_ID       0x07U
 #define GPT_DISABLENOTIFICATION_ID      0x08U
 #define GPT_SETMODE_ID                  0x09U
+#define GPT_ENABLEWAKEUP_ID             0x0BU
 #define GPT_DISABLEWAKEUP_ID            0x0AU
 #define GPT_CHECKWAKEUP_ID              0x0CU
 #define GPT_GETPREDEFTIMERVALUE_ID      0x0DU
@@ -48,6 +49,12 @@
 #define  Gpt_ChannelType unsigned int
 #define Gpt_ValueType  unsigned int
 
+//CLC REGISTER BITS
+#define DISR 0U
+#define DISS 1U
+#define EDIS 3U
+
+#define T2R  6U  //RUN BIT
 
 typedef enum
 {
@@ -98,7 +105,6 @@ typedef struct
   Gpt_T3OutputType OutputSelection;
   boolean EnableWakeup;
   void (*GptNotification) (void);
-  boolean NotificationEnabled;
 
 }Gpt_ChannelConfigType;
 
@@ -106,7 +112,7 @@ typedef struct
 {
     boolean Initialized;
     boolean Running;
-    boolean NotificationEnabled;
+    //boolean NotificationEnabled;
     Gpt_ValueType InitialValue;
     Gpt_ValueType MaximumValue;
     const Gpt_ChannelConfigType *ConfigPtr;
@@ -156,7 +162,7 @@ void Gpt_DisableWakeup(Gpt_ChannelType Channel);
 void Gpt_EnableWakeup(Gpt_ChannelType Channel);
 void Gpt_CheckWakeup(EcuM_WakeupSourceType WakeupSource);
 Std_ReturnType Gpt_GetPredefTimerValue(Gpt_PredefTimerType PredefTimer, uint32* TimerValuePtr);
-//void Gpt_Notification_<channel>Isr (void);
+void Gpt_Notification_Ch0(void);
 
 
 
